@@ -1,0 +1,68 @@
+2016-01-11 01:34:12 -  - exec CUpdateClientPartner::SearchModulesEx
+2016-01-11 01:34:12 -  - exec CUpdateClientPartner::__CollectRequestData
+2016-01-11 01:34:12 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=arenda-yamobura.com&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=5.4.40&dbv=5.6.26&instm=main%2C15.5.10%2CN%3Bclouds%2C15.5.1%2CN%3Bfileman%2C15.5.2%2CN%3Bsearch%2C15.5.1%2CN%3Bbitrix.sitecorporate%2C15.0.0%2CN%3Bseo%2C15.5.5%2CN%3Bhighloadblock%2C15.5.0%2CN%3Bperfmon%2C15.5.1%2CN%3Bsocialservices%2C15.5.3%2CN%3Btranslate%2C14.0.0%2CN%3Biblock%2C15.5.11%2CN%3Bcompression%2C14.0.0%2CN%3Bbitrixcloud%2C15.5.0%2CN&search_module_id=&search_module=&search_category=7%2C14&search_type=&search_order=DESC&search_order_by=SORT&search_page=1&SUPD_SRS=RU&SUPD_CMP=N
+2016-01-11 01:34:12 -  - exec CUpdateClientPartner::GetHTTPPage
+2016-01-11 01:34:13 -  - TIME SearchModulesEx(request) 1.461 sec
+2016-01-11 01:34:13 -  - exec CUpdateClientPartner::ParseServerData
+2016-01-11 01:34:30 -  - exec CUpdateClientPartner::ActivateCoupon
+2016-01-11 01:34:30 -  - exec CUpdateClientPartner::__CollectRequestData
+2016-01-11 01:34:30 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=arenda-yamobura.com&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=5.4.40&dbv=5.6.26&instm=main%2C15.5.10%2CN%3Bclouds%2C15.5.1%2CN%3Bfileman%2C15.5.2%2CN%3Bsearch%2C15.5.1%2CN%3Bbitrix.sitecorporate%2C15.0.0%2CN%3Bseo%2C15.5.5%2CN%3Bhighloadblock%2C15.5.0%2CN%3Bperfmon%2C15.5.1%2CN%3Bsocialservices%2C15.5.3%2CN%3Btranslate%2C14.0.0%2CN%3Biblock%2C15.5.11%2CN%3Bcompression%2C14.0.0%2CN%3Bbitrixcloud%2C15.5.0%2CN&SUPD_SRS=RU&SUPD_CMP=N&coupon=MPX-MYJORR14VU-YW61MFFK71&query_type=coupon
+2016-01-11 01:34:30 -  - exec CUpdateClientPartner::GetHTTPPage
+2016-01-11 01:34:31 -  - TIME ActivateCoupon(request) 0.174 sec
+2016-01-11 01:34:31 -  - exec CUpdateClientPartner::ParseServerData
+2016-01-11 01:34:31 - AC - [CHECK_IS_BAD] Купон (чек) не действителен. 
+2016-01-11 01:34:31 -  - exec CUpdateClientPartner::SearchModulesEx
+2016-01-11 01:34:31 -  - exec CUpdateClientPartner::__CollectRequestData
+2016-01-11 01:34:31 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=arenda-yamobura.com&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=5.4.40&dbv=5.6.26&instm=main%2C15.5.10%2CN%3Bclouds%2C15.5.1%2CN%3Bfileman%2C15.5.2%2CN%3Bsearch%2C15.5.1%2CN%3Bbitrix.sitecorporate%2C15.0.0%2CN%3Bseo%2C15.5.5%2CN%3Bhighloadblock%2C15.5.0%2CN%3Bperfmon%2C15.5.1%2CN%3Bsocialservices%2C15.5.3%2CN%3Btranslate%2C14.0.0%2CN%3Biblock%2C15.5.11%2CN%3Bcompression%2C14.0.0%2CN%3Bbitrixcloud%2C15.5.0%2CN&search_module_id=&search_module=&search_category=7%2C14&search_type=&search_order=DESC&search_order_by=SORT&search_page=1&SUPD_SRS=RU&SUPD_CMP=N
+2016-01-11 01:34:31 -  - exec CUpdateClientPartner::GetHTTPPage
+2016-01-11 01:34:32 -  - TIME SearchModulesEx(request) 1.135 sec
+2016-01-11 01:34:32 -  - exec CUpdateClientPartner::ParseServerData
+2016-01-11 01:34:48 -  - exec CUpdateClientPartner::ActivateCoupon
+2016-01-11 01:34:48 -  - exec CUpdateClientPartner::__CollectRequestData
+2016-01-11 01:34:48 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=arenda-yamobura.com&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=5.4.40&dbv=5.6.26&instm=main%2C15.5.10%2CN%3Bclouds%2C15.5.1%2CN%3Bfileman%2C15.5.2%2CN%3Bsearch%2C15.5.1%2CN%3Bbitrix.sitecorporate%2C15.0.0%2CN%3Bseo%2C15.5.5%2CN%3Bhighloadblock%2C15.5.0%2CN%3Bperfmon%2C15.5.1%2CN%3Bsocialservices%2C15.5.3%2CN%3Btranslate%2C14.0.0%2CN%3Biblock%2C15.5.11%2CN%3Bcompression%2C14.0.0%2CN%3Bbitrixcloud%2C15.5.0%2CN&SUPD_SRS=RU&SUPD_CMP=N&coupon=MPX-MYJORR14VU-YW61MFFK71&query_type=coupon
+2016-01-11 01:34:48 -  - exec CUpdateClientPartner::GetHTTPPage
+2016-01-11 01:34:48 -  - TIME ActivateCoupon(request) 0.184 sec
+2016-01-11 01:34:48 -  - exec CUpdateClientPartner::ParseServerData
+2016-01-11 01:34:48 - AC - [CHECK_IS_BAD] Купон (чек) не действителен. 
+2016-01-11 01:34:48 -  - exec CUpdateClientPartner::SearchModulesEx
+2016-01-11 01:34:48 -  - exec CUpdateClientPartner::__CollectRequestData
+2016-01-11 01:34:48 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=arenda-yamobura.com&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=5.4.40&dbv=5.6.26&instm=main%2C15.5.10%2CN%3Bclouds%2C15.5.1%2CN%3Bfileman%2C15.5.2%2CN%3Bsearch%2C15.5.1%2CN%3Bbitrix.sitecorporate%2C15.0.0%2CN%3Bseo%2C15.5.5%2CN%3Bhighloadblock%2C15.5.0%2CN%3Bperfmon%2C15.5.1%2CN%3Bsocialservices%2C15.5.3%2CN%3Btranslate%2C14.0.0%2CN%3Biblock%2C15.5.11%2CN%3Bcompression%2C14.0.0%2CN%3Bbitrixcloud%2C15.5.0%2CN&search_module_id=&search_module=&search_category=7%2C14&search_type=&search_order=DESC&search_order_by=SORT&search_page=1&SUPD_SRS=RU&SUPD_CMP=N
+2016-01-11 01:34:48 -  - exec CUpdateClientPartner::GetHTTPPage
+2016-01-11 01:34:49 -  - TIME SearchModulesEx(request) 0.862 sec
+2016-01-11 01:34:49 -  - exec CUpdateClientPartner::ParseServerData
+2016-01-11 01:35:50 -  - exec CUpdateClientPartner::ActivateCoupon
+2016-01-11 01:35:50 -  - exec CUpdateClientPartner::__CollectRequestData
+2016-01-11 01:35:50 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=arenda-yamobura.com&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=5.4.40&dbv=5.6.26&instm=main%2C15.5.10%2CN%3Bclouds%2C15.5.1%2CN%3Bfileman%2C15.5.2%2CN%3Bsearch%2C15.5.1%2CN%3Bbitrix.sitecorporate%2C15.0.0%2CN%3Bseo%2C15.5.5%2CN%3Bhighloadblock%2C15.5.0%2CN%3Bperfmon%2C15.5.1%2CN%3Bsocialservices%2C15.5.3%2CN%3Btranslate%2C14.0.0%2CN%3Biblock%2C15.5.11%2CN%3Bcompression%2C14.0.0%2CN%3Bbitrixcloud%2C15.5.0%2CN&SUPD_SRS=RU&SUPD_CMP=N&coupon=MPX-MYJORR14VU-YW61MFFK71&query_type=coupon
+2016-01-11 01:35:50 -  - exec CUpdateClientPartner::GetHTTPPage
+2016-01-11 01:35:50 -  - TIME ActivateCoupon(request) 0.185 sec
+2016-01-11 01:35:50 -  - exec CUpdateClientPartner::ParseServerData
+2016-01-11 01:35:50 - AC - [CHECK_IS_BAD] Купон (чек) не действителен. 
+2016-01-11 01:35:50 -  - exec CUpdateClientPartner::SearchModulesEx
+2016-01-11 01:35:50 -  - exec CUpdateClientPartner::__CollectRequestData
+2016-01-11 01:35:50 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=arenda-yamobura.com&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=5.4.40&dbv=5.6.26&instm=main%2C15.5.10%2CN%3Bclouds%2C15.5.1%2CN%3Bfileman%2C15.5.2%2CN%3Bsearch%2C15.5.1%2CN%3Bbitrix.sitecorporate%2C15.0.0%2CN%3Bseo%2C15.5.5%2CN%3Bhighloadblock%2C15.5.0%2CN%3Bperfmon%2C15.5.1%2CN%3Bsocialservices%2C15.5.3%2CN%3Btranslate%2C14.0.0%2CN%3Biblock%2C15.5.11%2CN%3Bcompression%2C14.0.0%2CN%3Bbitrixcloud%2C15.5.0%2CN&search_module_id=&search_module=&search_category=7%2C14&search_type=&search_order=DESC&search_order_by=SORT&search_page=1&SUPD_SRS=RU&SUPD_CMP=N
+2016-01-11 01:35:50 -  - exec CUpdateClientPartner::GetHTTPPage
+2016-01-11 01:35:51 -  - TIME SearchModulesEx(request) 0.907 sec
+2016-01-11 01:35:51 -  - exec CUpdateClientPartner::ParseServerData
+2016-01-11 01:36:05 -  - exec CUpdateClientPartner::ActivateCoupon
+2016-01-11 01:36:05 -  - exec CUpdateClientPartner::__CollectRequestData
+2016-01-11 01:36:05 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=arenda-yamobura.com&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=5.4.40&dbv=5.6.26&instm=main%2C15.5.10%2CN%3Bclouds%2C15.5.1%2CN%3Bfileman%2C15.5.2%2CN%3Bsearch%2C15.5.1%2CN%3Bbitrix.sitecorporate%2C15.0.0%2CN%3Bseo%2C15.5.5%2CN%3Bhighloadblock%2C15.5.0%2CN%3Bperfmon%2C15.5.1%2CN%3Bsocialservices%2C15.5.3%2CN%3Btranslate%2C14.0.0%2CN%3Biblock%2C15.5.11%2CN%3Bcompression%2C14.0.0%2CN%3Bbitrixcloud%2C15.5.0%2CN&SUPD_SRS=RU&SUPD_CMP=N&coupon=MPX-MYJORR14VU-YW61MFFK71&query_type=coupon
+2016-01-11 01:36:05 -  - exec CUpdateClientPartner::GetHTTPPage
+2016-01-11 01:36:05 -  - TIME ActivateCoupon(request) 0.182 sec
+2016-01-11 01:36:05 -  - exec CUpdateClientPartner::ParseServerData
+2016-01-11 01:36:05 - AC - [CHECK_IS_BAD] Купон (чек) не действителен. 
+2016-01-11 01:36:05 -  - exec CUpdateClientPartner::SearchModulesEx
+2016-01-11 01:36:05 -  - exec CUpdateClientPartner::__CollectRequestData
+2016-01-11 01:36:05 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=arenda-yamobura.com&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=5.4.40&dbv=5.6.26&instm=main%2C15.5.10%2CN%3Bclouds%2C15.5.1%2CN%3Bfileman%2C15.5.2%2CN%3Bsearch%2C15.5.1%2CN%3Bbitrix.sitecorporate%2C15.0.0%2CN%3Bseo%2C15.5.5%2CN%3Bhighloadblock%2C15.5.0%2CN%3Bperfmon%2C15.5.1%2CN%3Bsocialservices%2C15.5.3%2CN%3Btranslate%2C14.0.0%2CN%3Biblock%2C15.5.11%2CN%3Bcompression%2C14.0.0%2CN%3Bbitrixcloud%2C15.5.0%2CN&search_module_id=&search_module=&search_category=7%2C14&search_type=&search_order=DESC&search_order_by=SORT&search_page=1&SUPD_SRS=RU&SUPD_CMP=N
+2016-01-11 01:36:05 -  - exec CUpdateClientPartner::GetHTTPPage
+2016-01-11 01:36:06 -  - TIME SearchModulesEx(request) 0.884 sec
+2016-01-11 01:36:06 -  - exec CUpdateClientPartner::ParseServerData
+2016-01-11 01:41:05 -  - exec CUpdateClientPartner::LoadModuleNoDemand
+2016-01-11 01:41:05 -  - exec CUpdateClientPartner::__CollectRequestData
+2016-01-11 01:41:05 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=arenda-yamobura.com&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=5.4.40&dbv=5.6.26&instm=main%2C15.5.10%2CN%3Bclouds%2C15.5.1%2CN%3Bfileman%2C15.5.2%2CN%3Bsearch%2C15.5.1%2CN%3Bbitrix.sitecorporate%2C15.0.0%2CN%3Bseo%2C15.5.5%2CN%3Bhighloadblock%2C15.5.0%2CN%3Bperfmon%2C15.5.1%2CN%3Bsocialservices%2C15.5.3%2CN%3Btranslate%2C14.0.0%2CN%3Biblock%2C15.5.11%2CN%3Bcompression%2C14.0.0%2CN%3Bbitrixcloud%2C15.5.0%2CN&reqm=webstudiosamovar.remontsw&lim=Y&SUPD_SRS=RU&SUPD_CMP=N
+2016-01-11 01:41:05 -  - exec CUpdateClientPartner::GetHTTPPage
+2016-01-11 01:41:15 -  - TIME LoadModuleNoDemand(request) 10.031 sec
+2016-01-11 01:41:15 -  - exec CUpdateClientPartner::UnGzipArchive
+2016-01-11 01:41:16 -  - TIME UnGzipArchive 1.283 sec
+2016-01-11 01:41:16 -  - exec CUpdateClientPartner::GetStepUpdateInfo
+2016-01-11 01:41:16 -  - exec CUpdateClientPartner::ParseServerData
+2016-01-11 01:41:17 -  - TIME UpdateStepModules 0.866 sec

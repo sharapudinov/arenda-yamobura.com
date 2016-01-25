@@ -1,0 +1,1 @@
+Arenda-Yamobura.com © 2016
