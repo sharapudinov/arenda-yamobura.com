@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="03111b8f-b050-4b1a-ae7e-b1c319916c84" name="yamobur" url="http://arenda-yamobura.com">
+        <fileTransfer host="b2153.dhpage.net" port="22" rootFolder="/home/b2153/domains/arenda-yamobura.com/www/" accessType="SFTP" password="dffadfc1dfccdfc8dfcedfdbdfd2df9d" username="b2153">
+          <advancedOptions>
+            <advancedOptions controlEncoding="utf-8" dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
