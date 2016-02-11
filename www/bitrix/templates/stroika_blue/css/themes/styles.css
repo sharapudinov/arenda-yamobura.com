@@ -168,11 +168,12 @@
 			.price .table_title{border-bottom:1px solid #d8d8d8; background:#f5f5f5;}
 				.price .table_title h2{font-size:25px; text-align:center; text-transform:inherit; margin:15px 0; font-family:PTSansRegular; font-weight:normal;}
 			.price table thead .column_1{border-top-left-radius:5px;}
-			.price table thead .column_4{border-top-right-radius:5px;}
+			.price table thead .column_5{border-top-right-radius:5px;}
 			.price table .column_1{width:8%;}
-			.price table .column_2{width:59%;}
+			.price table .column_2{width:48%;}
 			.price table .column_3{width:8%;}
-			.price table .column_4{width:25%;}
+			.price table .column_4{width:15%;}
+			.price table .column_5{width:15%;}
 			.price table thead tr{background:#00aeff; font-size:20px; color:#fff; font-family:PTSansBold; text-align:center;}
 				.price table thead td{border-right:1px solid #006899; padding:5px 0;}
 				.price table thead td:last-child{border-right:none;}
