@@ -20,6 +20,7 @@ $this->setFrameMode(true);
 		<td class="column_2 name"><?=GetMessage("COL_2");?></td>
 		<td class="column_3"><?=GetMessage("COL_3");?></td>
 		<td class="column_5"><?=GetMessage("COL_4");?></td>
+		<td class="column_5"><?=GetMessage("COL_5");?></td>
 	</tr>
 	</thead>
 	<tbody>
@@ -32,12 +33,13 @@ $this->setFrameMode(true);
 		<?
 			foreach($arSection["ELEMENTS"] as $arElement){
 				$id_price+=1;
-		?>	
+		?>
 			<tr>
-				<td class="column_1"><?=$id_price;?></td>
+				<td class="column_1"><?=$arElement["UNITS"];?></td>
 				<td class="column_2 name"><?=$arElement["NAME"];?></td> 
 				<td class="column_3"><?=$arElement["PROPERTY_SYMBOL_VALUE"];?></td>
 				<td class="column_4 price"><?=$arElement["PROPERTY_PRICE_VALUE"];?> <?=GetMessage("RUB");?></td>
+				<td class="column_5"><?=$arElement["PROPERTY_PRICE_VALUE"];?> <?=GetMessage("RUB");?></td>
 			</tr>
 		<?}}?>
 		</tbody>
