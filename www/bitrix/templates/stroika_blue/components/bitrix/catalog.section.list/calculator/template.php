@@ -41,8 +41,7 @@ $this->setFrameMode(true);
 		?>	
 			<tr>
 				<td class="column_1"><?=$id_price;?></td>
-				<td class="column_2 name"><?=$arElement["NAME"];?></td> 
-				<td class="column_3"><?=$arElement["PROPERTY_SYMBOL_VALUE"];?></td>
+				<td class="column_2 name"><?=$arElement["NAME"];?></td>
 				<td class="column_4 price"><?=$arElement["PROPERTY_PRICE_VALUE"];?> <?=GetMessage("RUB");?></td>
 				<td class="column_5"><input id-element="<?=$arElement["ID"]?>" data-price="<?=$arElement["PROPERTY_PRICE_VALUE"];?>" type="text" /></td>
 				<td class="column_6"><?=GetMessage("ITOG_2");?> <span></span></td>
@@ -63,6 +62,7 @@ $this->setFrameMode(true);
 <script>
 	$(document).ready(function(){
 		$(".column_5 input").keyup(function(){
+			//debugger;
 			var price;
 			price = new Array();
 			$(".column_5 input").each(function(indx, element){
@@ -71,7 +71,7 @@ $this->setFrameMode(true);
 					price[$(".column_5 input").eq(indx).attr("id-element")] = $(".column_5 input").eq(indx).val();
 				}
 			});
-			$.ajax({ //обновляем корзину в шапке
+			$.ajax({
 				type: "POST",
 				url: "<?=SITE_DIR?>calculator/csv.php",
 				data: {price:price},

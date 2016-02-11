@@ -1,3 +1,3 @@
 <?
-$MESS ['T_NEWS_DETAIL_BACK'] = "Р’РѕР·РІСЂР°С‚ Рє СЃРїРёСЃРєСѓ";
+$MESS ['T_NEWS_DETAIL_BACK'] = "Возврат к списку";
 ?>
