@@ -7,16 +7,16 @@ IncludeTemplateLangFile(__FILE__);
 	<footer>
 		<div class="footer_center">
 			<?$APPLICATION->IncludeComponent("bitrix:menu", "menu_footer", Array(
-				"ROOT_MENU_TYPE" => "top",	// Тип меню для первого уровня
-					"MENU_CACHE_TYPE" => "A",	// Тип кеширования
-					"MENU_CACHE_TIME" => "3600",	// Время кеширования (сек.)
-					"MENU_CACHE_USE_GROUPS" => "Y",	// Учитывать права доступа
-					"MENU_CACHE_GET_VARS" => "",	// Значимые переменные запроса
-					"MAX_LEVEL" => "4",	// Уровень вложенности меню
-					"CHILD_MENU_TYPE" => "left",	// Тип меню для остальных уровней
-					"USE_EXT" => "N",	// Подключать файлы с именами вида .тип_меню.menu_ext.php
-					"DELAY" => "N",	// Откладывать выполнение шаблона меню
-					"ALLOW_MULTI_SELECT" => "N",	// Разрешить несколько активных пунктов одновременно
+				"ROOT_MENU_TYPE" => "top",	// пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+					"MENU_CACHE_TYPE" => "A",	// пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+					"MENU_CACHE_TIME" => "3600",	// пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅ.)
+					"MENU_CACHE_USE_GROUPS" => "Y",	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+					"MENU_CACHE_GET_VARS" => "",	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+					"MAX_LEVEL" => "4",	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+					"CHILD_MENU_TYPE" => "left",	// пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+					"USE_EXT" => "N",	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ .пїЅпїЅпїЅ_пїЅпїЅпїЅпїЅ.menu_ext.php
+					"DELAY" => "N",	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+					"ALLOW_MULTI_SELECT" => "N",	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 					"COMPONENT_TEMPLATE" => ".default",
 					"MENU_THEME" => "site"
 				),
@@ -30,7 +30,7 @@ IncludeTemplateLangFile(__FILE__);
 					<div>
 					<?$APPLICATION->IncludeFile(SITE_DIR."include/footer/copyright.php", Array(), Array("MODE" => "html","NAME" => ""));?>
 					</div>
-					<div class="quantom"><?=GetMessage("CREATE_SITE");?><a href="http://samovar-web.ru/"><?=GetMessage("SAMOVAR");?></a></div>
+					<div class="quantom"><a href="http://seocontext.su/" title="<?=GetMessage("CREATE_SITE");?>"><?=GetMessage("CREATE_SITE");?></a> <a href="http://seocontext.su/" title="<?=GetMessage("SAMOVAR");?>"><?=GetMessage("SAMOVAR");?></a></div>
 				</div>
 				<div class="footer_guide">
 					<div class="footer_address">
