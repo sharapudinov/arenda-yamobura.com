@@ -77,6 +77,26 @@ $(".projects").on('click', 'button', function(){
 	});
 });
 
+(function more_item_button() {
+	$("#more_services").on('click', function () {
+		startLoadingAnimation();
+		$.ajax({
+			async: false,
+			type: "POST",
+			url: $(this).attr("data-site-id") + "ajax_script/services.php",
+			data: "ajax_array=" + $(this).attr("data-all-count") + "&section_id=" + $(this).attr("data-section-id"),
+			dataType: "html",
+			success: function (data) {
+				setTimeout(function () {
+					$("#detail_list").html("");
+					$(".loadImg").hide();
+					$("#detail_list").html(data);
+					more_item_button();
+				}, 1000);
+			}
+		});
+	});
+})();
 function startLoadingAnimation()
 {
 	var imgObj = $(".loadImg");

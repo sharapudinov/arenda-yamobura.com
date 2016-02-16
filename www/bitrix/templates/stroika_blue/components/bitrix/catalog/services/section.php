@@ -170,3 +170,34 @@ if ($isFilter)
 	),
 	$component
 );?>
+<div id="detail_list">
+<?$APPLICATION->IncludeComponent("bitrix:catalog.section.list", "detail_list", Array(
+	"COMPONENT_TEMPLATE" => "detail_list",
+	"IBLOCK_TYPE" => "services",	// Тип инфоблока
+	"IBLOCK_ID" => $arParams["IBLOCK_ID"],	// Инфоблок
+	"SECTION_CODE" => $arResult["VARIABLES"]["SECTION_CODE"],	// Код раздела
+	"COUNT_ELEMENTS" => "N",	// Показывать количество элементов в разделе
+	"TOP_DEPTH" => "2",	// Максимальная отображаемая глубина разделов
+	"SECTION_FIELDS" => array(	// Поля разделов
+		0 => "NAME",
+		1 => "PICTURE",
+		2 => "DETAIL_PICTURE",
+		3 => "",
+	),
+	"SECTION_USER_FIELDS" => array(	// Свойства разделов
+		0 => "",
+		1 => "",
+	),
+	"VIEW_MODE" => "TILE",	// Р’РёРґ СЃРїРёСЃРєР° РїРѕРґСЂР°Р·РґРµР»РѕРІ
+	"SHOW_PARENT_NAME" => "N",	// РџРѕРєР°Р·С‹РІР°С‚СЊ РЅР°Р·РІР°РЅРёРµ СЂР°Р·РґРµР»Р°
+	"HIDE_SECTION_NAME" => "N",	// РќРµ РїРѕРєР°Р·С‹РІР°С‚СЊ РЅР°Р·РІР°РЅРёСЏ РїРѕРґСЂР°Р·РґРµР»РѕРІ
+	"SECTION_URL" => "/#SECTION_CODE#/#ELEMENT_CODE#/",	// URL, ведущий на страницу с содержимым раздела
+	"CACHE_TYPE" => "A",	// Тип кеширования
+	"CACHE_TIME" => "36000000",	// Время кеширования (сек.)
+	"CACHE_GROUPS" => "Y",	// Учитывать права доступа
+	"ADD_SECTIONS_CHAIN" => "Y",	// Включать раздел в цепочку навигации
+	"SECTION_ID" => $_REQUEST["SECTION_ID"],	// ID раздела
+),
+	$component
+);?>
+</div>

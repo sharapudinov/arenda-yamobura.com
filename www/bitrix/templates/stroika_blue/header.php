@@ -1,16 +1,18 @@
 <?
 IncludeTemplateLangFile(__FILE__);
+
+AddMessage2Log($APPLICATION->GetCurDir());
 ?>
 <!DOCTYPE HTML>
 <html lang="<?=LANGUAGE_ID?>">
 <head>
 	<title><?$APPLICATION->ShowTitle()?></title>
-	<meta property="og:site_name" content="Âàø ñàéò" />
+	<meta property="og:site_name" content="Ð’Ð°Ñˆ ÑÐ°Ð¹Ñ‚" />
 	<meta property="og:locale" content="ru_RU" />
 	<meta property="og:title" content="<?$APPLICATION->ShowTitle()?>" />
 	<meta property="og:image" content="<?=SITE_TEMPLATE_PATH;?>/images/logo.png" />
-	<link rel="index" title="Âàø ñàéò" href="/" />
-	<meta name="application-name" content="Âàø ñàéò" />
+	<link rel="index" title="Ð’Ð°Ñˆ ÑÐ°Ð¹Ñ‚" href="/" />
+	<meta name="application-name" content="Ð’Ð°Ñˆ ÑÐ°Ð¹Ñ‚" />
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="shortcut icon" href="/favicon.ico" />
@@ -54,7 +56,7 @@ CModule::IncludeModule("iblock");
 		array(
 			"COMPONENT_TEMPLATE" => "leave_application",
 			"USE_CAPTCHA" => "N",
-			"OK_TEXT" => "Ñïàñèáî, âàøå ñîîáùåíèå ïðèíÿòî.",
+			"OK_TEXT" => "Ð¡Ð¿Ð°ÑÐ¸Ð±Ð¾, Ð²Ð°ÑˆÐµ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ Ð¿Ñ€Ð¸Ð½ÑÑ‚Ð¾.",
 			"EMAIL_TO" => COption::GetOptionString("main", "email_from"),
 			"REQUIRED_FIELDS" => array(
 			),
@@ -74,7 +76,7 @@ CModule::IncludeModule("iblock");
 		array(
 			"COMPONENT_TEMPLATE" => "request_call",
 			"USE_CAPTCHA" => "N",
-			"OK_TEXT" => "Ñïàñèáî, âàøå ñîîáùåíèå ïðèíÿòî.",
+			"OK_TEXT" => "Ð¡Ð¿Ð°ÑÐ¸Ð±Ð¾, Ð²Ð°ÑˆÐµ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ Ð¿Ñ€Ð¸Ð½ÑÑ‚Ð¾.",
 			"EMAIL_TO" => COption::GetOptionString("main", "email_from"),
 			"REQUIRED_FIELDS" => array(
 			),
@@ -90,28 +92,28 @@ CModule::IncludeModule("iblock");
 		<div class="header_center">
 			<div class="header_top">
 				<div class="logo">
-					<?$APPLICATION->IncludeFile(SITE_DIR."include/header/logo.php", Array(), Array("MODE" => "html","NAME" => "âàø ëîãîòèï"));?>
+					<?$APPLICATION->IncludeFile(SITE_DIR."include/header/logo.php", Array(), Array("MODE" => "html","NAME" => "Ð²Ð°Ñˆ Ð»Ð¾Ð³Ð¾Ñ‚Ð¸Ð¿"));?>
 				</div>
 				<div class="header_search">
 					<?$APPLICATION->IncludeComponent("bitrix:search.form", "search", Array(
 						"COMPONENT_TEMPLATE" => "flat",
-							"PAGE" => "#SITE_DIR#search/",	// Ñòðàíèöà âûäà÷è ðåçóëüòàòîâ ïîèñêà (äîñòóïåí ìàêðîñ #SITE_DIR#)
-							"USE_SUGGEST" => "N",	// Ïîêàçûâàòü ïîäñêàçêó ñ ïîèñêîâûìè ôðàçàìè
+							"PAGE" => "#SITE_DIR#search/",	// Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° Ð²Ñ‹Ð´Ð°Ñ‡Ð¸ Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ð¾Ð² Ð¿Ð¾Ð¸ÑÐºÐ° (Ð´Ð¾ÑÑ‚ÑƒÐ¿ÐµÐ½ Ð¼Ð°ÐºÑ€Ð¾Ñ #SITE_DIR#)
+							"USE_SUGGEST" => "N",	// ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ Ð¿Ð¾Ð´ÑÐºÐ°Ð·ÐºÑƒ Ñ Ð¿Ð¾Ð¸ÑÐºÐ¾Ð²Ñ‹Ð¼Ð¸ Ñ„Ñ€Ð°Ð·Ð°Ð¼Ð¸
 						),
 						false
 					);?>
 					<div class="header_address">
-						<?$APPLICATION->IncludeFile(SITE_DIR."include/header/address.php", Array(), Array("MODE" => "html","NAME" => "âàø àäðåñ"));?>
+						<?$APPLICATION->IncludeFile(SITE_DIR."include/header/address.php", Array(), Array("MODE" => "html","NAME" => "Ð²Ð°Ñˆ Ð°Ð´Ñ€ÐµÑ"));?>
 					</div>
 				</div>
 				<div class="header_contact">
 					<div class="header_phone">
-					<?$APPLICATION->IncludeFile(SITE_DIR."include/header/phone.php", Array(), Array("MODE" => "html","NAME" => "âàø íîìåð òåëåôîíà"));?>
+					<?$APPLICATION->IncludeFile(SITE_DIR."include/header/phone.php", Array(), Array("MODE" => "html","NAME" => "Ð²Ð°Ñˆ Ð½Ð¾Ð¼ÐµÑ€ Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½Ð°"));?>
 					</div>
 					<div class="header_email">
 						<p><a href="#"><?=GetMessage("ADD_PHONE");?></a></p> | 
 						<div>
-						<?$APPLICATION->IncludeFile(SITE_DIR."include/header/email.php", Array(), Array("MODE" => "html","NAME" => "âàø email"));?>
+						<?$APPLICATION->IncludeFile(SITE_DIR."include/header/email.php", Array(), Array("MODE" => "html","NAME" => "Ð²Ð°Ñˆ email"));?>
 						</div>
 					</div>
 					<button><?=GetMessage("ADD_APL");?></button>
@@ -120,8 +122,8 @@ CModule::IncludeModule("iblock");
 			<div class="mobile_header_search">
 			<?$APPLICATION->IncludeComponent("bitrix:search.form", "search", Array(
 				"COMPONENT_TEMPLATE" => "flat",
-					"PAGE" => "#SITE_DIR#search/",	// Ñòðàíèöà âûäà÷è ðåçóëüòàòîâ ïîèñêà (äîñòóïåí ìàêðîñ #SITE_DIR#)
-					"USE_SUGGEST" => "N",	// Ïîêàçûâàòü ïîäñêàçêó ñ ïîèñêîâûìè ôðàçàìè
+					"PAGE" => "#SITE_DIR#search/",	// Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð° Ð²Ñ‹Ð´Ð°Ñ‡Ð¸ Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚Ð¾Ð² Ð¿Ð¾Ð¸ÑÐºÐ° (Ð´Ð¾ÑÑ‚ÑƒÐ¿ÐµÐ½ Ð¼Ð°ÐºÑ€Ð¾Ñ #SITE_DIR#)
+					"USE_SUGGEST" => "N",	// ÐŸÐ¾ÐºÐ°Ð·Ñ‹Ð²Ð°Ñ‚ÑŒ Ð¿Ð¾Ð´ÑÐºÐ°Ð·ÐºÑƒ Ñ Ð¿Ð¾Ð¸ÑÐºÐ¾Ð²Ñ‹Ð¼Ð¸ Ñ„Ñ€Ð°Ð·Ð°Ð¼Ð¸
 				),
 				false
 			);?>
@@ -131,16 +133,16 @@ CModule::IncludeModule("iblock");
 	<nav id="top_menu" class="default">
 		<a href="#" id="mobile_menu"><?=GetMessage("MENU");?></a>
 		<?$APPLICATION->IncludeComponent("bitrix:menu", "main_menu", Array(
-			"ROOT_MENU_TYPE" => "top",	// Òèï ìåíþ äëÿ ïåðâîãî óðîâíÿ
-				"MENU_CACHE_TYPE" => "A",	// Òèï êåøèðîâàíèÿ
-				"MENU_CACHE_TIME" => "3600",	// Âðåìÿ êåøèðîâàíèÿ (ñåê.)
-				"MENU_CACHE_USE_GROUPS" => "Y",	// Ó÷èòûâàòü ïðàâà äîñòóïà
-				"MENU_CACHE_GET_VARS" => "",	// Çíà÷èìûå ïåðåìåííûå çàïðîñà
-				"MAX_LEVEL" => "4",	// Óðîâåíü âëîæåííîñòè ìåíþ
-				"CHILD_MENU_TYPE" => "left",	// Òèï ìåíþ äëÿ îñòàëüíûõ óðîâíåé
-				"USE_EXT" => "N",	// Ïîäêëþ÷àòü ôàéëû ñ èìåíàìè âèäà .òèï_ìåíþ.menu_ext.php
-				"DELAY" => "N",	// Îòêëàäûâàòü âûïîëíåíèå øàáëîíà ìåíþ
-				"ALLOW_MULTI_SELECT" => "N",	// Ðàçðåøèòü íåñêîëüêî àêòèâíûõ ïóíêòîâ îäíîâðåìåííî
+			"ROOT_MENU_TYPE" => "top",	// Ð¢Ð¸Ð¿ Ð¼ÐµÐ½ÑŽ Ð´Ð»Ñ Ð¿ÐµÑ€Ð²Ð¾Ð³Ð¾ ÑƒÑ€Ð¾Ð²Ð½Ñ
+				"MENU_CACHE_TYPE" => "A",	// Ð¢Ð¸Ð¿ ÐºÐµÑˆÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ
+				"MENU_CACHE_TIME" => "3600",	// Ð’Ñ€ÐµÐ¼Ñ ÐºÐµÑˆÐ¸Ñ€Ð¾Ð²Ð°Ð½Ð¸Ñ (ÑÐµÐº.)
+				"MENU_CACHE_USE_GROUPS" => "Y",	// Ð£Ñ‡Ð¸Ñ‚Ñ‹Ð²Ð°Ñ‚ÑŒ Ð¿Ñ€Ð°Ð²Ð° Ð´Ð¾ÑÑ‚ÑƒÐ¿Ð°
+				"MENU_CACHE_GET_VARS" => "",	// Ð—Ð½Ð°Ñ‡Ð¸Ð¼Ñ‹Ðµ Ð¿ÐµÑ€ÐµÐ¼ÐµÐ½Ð½Ñ‹Ðµ Ð·Ð°Ð¿Ñ€Ð¾ÑÐ°
+				"MAX_LEVEL" => "4",	// Ð£Ñ€Ð¾Ð²ÐµÐ½ÑŒ Ð²Ð»Ð¾Ð¶ÐµÐ½Ð½Ð¾ÑÑ‚Ð¸ Ð¼ÐµÐ½ÑŽ
+				"CHILD_MENU_TYPE" => "left",	// Ð¢Ð¸Ð¿ Ð¼ÐµÐ½ÑŽ Ð´Ð»Ñ Ð¾ÑÑ‚Ð°Ð»ÑŒÐ½Ñ‹Ñ… ÑƒÑ€Ð¾Ð²Ð½ÐµÐ¹
+				"USE_EXT" => "N",	// ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡Ð°Ñ‚ÑŒ Ñ„Ð°Ð¹Ð»Ñ‹ Ñ Ð¸Ð¼ÐµÐ½Ð°Ð¼Ð¸ Ð²Ð¸Ð´Ð° .Ñ‚Ð¸Ð¿_Ð¼ÐµÐ½ÑŽ.menu_ext.php
+				"DELAY" => "N",	// ÐžÑ‚ÐºÐ»Ð°Ð´Ñ‹Ð²Ð°Ñ‚ÑŒ Ð²Ñ‹Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ðµ ÑˆÐ°Ð±Ð»Ð¾Ð½Ð° Ð¼ÐµÐ½ÑŽ
+				"ALLOW_MULTI_SELECT" => "N",	// Ð Ð°Ð·Ñ€ÐµÑˆÐ¸Ñ‚ÑŒ Ð½ÐµÑÐºÐ¾Ð»ÑŒÐºÐ¾ Ð°ÐºÑ‚Ð¸Ð²Ð½Ñ‹Ñ… Ð¿ÑƒÐ½ÐºÑ‚Ð¾Ð² Ð¾Ð´Ð½Ð¾Ð²Ñ€ÐµÐ¼ÐµÐ½Ð½Ð¾
 				"COMPONENT_TEMPLATE" => ".default",
 				"MENU_THEME" => "site"
 			),
@@ -202,7 +204,7 @@ CModule::IncludeModule("iblock");
 		"PAGER_TEMPLATE" => ".default",
 		"DISPLAY_TOP_PAGER" => "N",
 		"DISPLAY_BOTTOM_PAGER" => "N",
-		"PAGER_TITLE" => "Óñëóãè",
+		"PAGER_TITLE" => "Ð£ÑÐ»ÑƒÐ³Ð¸",
 		"PAGER_SHOW_ALWAYS" => "N",
 		"PAGER_DESC_NUMBERING" => "N",
 		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
@@ -221,9 +223,9 @@ CModule::IncludeModule("iblock");
 <?if ($APPLICATION->GetCurPage(false)!=SITE_DIR){
 $APPLICATION->IncludeComponent("bitrix:breadcrumb", "breadcrumb", Array(
 	"COMPONENT_TEMPLATE" => ".default",
-		"START_FROM" => "0",	// Íîìåð ïóíêòà, íà÷èíàÿ ñ êîòîðîãî áóäåò ïîñòðîåíà íàâèãàöèîííàÿ öåïî÷êà
-		"PATH" => "",	// Ïóòü, äëÿ êîòîðîãî áóäåò ïîñòðîåíà íàâèãàöèîííàÿ öåïî÷êà (ïî óìîë÷àíèþ, òåêóùèé ïóòü)
-		"SITE_ID" => "s1",	// Càéò (óñòàíàâëèâàåòñÿ â ñëó÷àå ìíîãîñàéòîâîé âåðñèè, êîãäà DOCUMENT_ROOT ó ñàéòîâ ðàçíûé)
+		"START_FROM" => "0",	// ÐÐ¾Ð¼ÐµÑ€ Ð¿ÑƒÐ½ÐºÑ‚Ð°, Ð½Ð°Ñ‡Ð¸Ð½Ð°Ñ Ñ ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð³Ð¾ Ð±ÑƒÐ´ÐµÑ‚ Ð¿Ð¾ÑÑ‚Ñ€Ð¾ÐµÐ½Ð° Ð½Ð°Ð²Ð¸Ð³Ð°Ñ†Ð¸Ð¾Ð½Ð½Ð°Ñ Ñ†ÐµÐ¿Ð¾Ñ‡ÐºÐ°
+		"PATH" => "",	// ÐŸÑƒÑ‚ÑŒ, Ð´Ð»Ñ ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð³Ð¾ Ð±ÑƒÐ´ÐµÑ‚ Ð¿Ð¾ÑÑ‚Ñ€Ð¾ÐµÐ½Ð° Ð½Ð°Ð²Ð¸Ð³Ð°Ñ†Ð¸Ð¾Ð½Ð½Ð°Ñ Ñ†ÐµÐ¿Ð¾Ñ‡ÐºÐ° (Ð¿Ð¾ ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸ÑŽ, Ñ‚ÐµÐºÑƒÑ‰Ð¸Ð¹ Ð¿ÑƒÑ‚ÑŒ)
+		"SITE_ID" => "s1",	// CÐ°Ð¹Ñ‚ (ÑƒÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°ÐµÑ‚ÑÑ Ð² ÑÐ»ÑƒÑ‡Ð°Ðµ Ð¼Ð½Ð¾Ð³Ð¾ÑÐ°Ð¹Ñ‚Ð¾Ð²Ð¾Ð¹ Ð²ÐµÑ€ÑÐ¸Ð¸, ÐºÐ¾Ð³Ð´Ð° DOCUMENT_ROOT Ñƒ ÑÐ°Ð¹Ñ‚Ð¾Ð² Ñ€Ð°Ð·Ð½Ñ‹Ð¹)
 	),
 	false
 );?>

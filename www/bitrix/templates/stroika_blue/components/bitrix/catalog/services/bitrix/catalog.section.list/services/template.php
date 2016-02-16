@@ -12,9 +12,6 @@
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
 ?>
-<pre>
-<? //print_r($arResult); ?>
-	</pre>
 <div class="services_section_block">
     <? $count = 0;
     foreach ($arResult["SECTIONS"] as $arItem):?>
@@ -48,7 +45,7 @@ $this->setFrameMode(true);
                     <?/*= $arItem["DESCRIPTION"]; */?>
                 </div>-->
             </div>
-            <p><a href="<?= $arItem["SECTION_PAGE_URL"] ?>" itemprop="url"><?= GetMessage("READ_MORE") ?></a></p>
+            <p><!--<a href="<?/*= $arItem["SECTION_PAGE_URL"] */?>" itemprop="url"><?/*= GetMessage("READ_MORE") */?></a></p>-->
         </article>
         <? if ($count % 3 == 0) echo "</div>"; ?>
     <? endforeach; ?>

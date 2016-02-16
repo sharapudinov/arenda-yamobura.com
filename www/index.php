@@ -59,7 +59,7 @@ $APPLICATION->SetPageProperty("description", "Описание вашего са
 			"AJAX_OPTION_STYLE" => "Y",	// Включить подгрузку стилей
 			"BASKET_URL" => "/personal/basket.php",	// URL, ведущий на страницу с корзиной покупателя
 			"CACHE_FILTER" => "N",	// Кешировать при установленном фильтре
-			"CACHE_GROUPS" => "Y",	// Учитывать права доступа
+			"CACHE_GROUPS" => "N",	// Учитывать права доступа
 			"CACHE_TIME" => "36000000",	// Время кеширования (сек.)
 			"CACHE_TYPE" => "A",	// Тип кеширования
 			"COMPONENT_TEMPLATE" => ".default",

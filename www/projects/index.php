@@ -1,5 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+
 $APPLICATION->SetTitle("Проекты");
 $APPLICATION->SetPageProperty("tags", "Проекты");
 $APPLICATION->SetPageProperty("keywords", "Ключевые, слова, вашего, сайта");
