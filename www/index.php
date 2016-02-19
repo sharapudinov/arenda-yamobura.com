@@ -121,7 +121,7 @@ $APPLICATION->SetPageProperty("description", "Описание вашего са
 			<div>
 				<?$APPLICATION->IncludeFile(SITE_DIR."include/index/about_company_text.php", Array(), Array("MODE" => "html","NAME" => ""));?>
 			</div>
-			<div class="about_company_img"></div>
+			<!--<div class="about_company_img"></div>-->
 	</div>
 </div>
 <div class="wrapper_center">
