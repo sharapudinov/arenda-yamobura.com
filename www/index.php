@@ -342,5 +342,7 @@ $APPLICATION->SetPageProperty("description", "Описание вашего са
 	false
 );?>
 	</div>
+	<?$APPLICATION->IncludeFile(SITE_DIR."include/index/seo.php", Array(), Array("MODE" => "html","NAME" => "ваш логотип"));?>
+
 </div>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

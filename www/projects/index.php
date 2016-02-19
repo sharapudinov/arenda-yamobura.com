@@ -126,12 +126,15 @@ $APPLICATION->SetPageProperty("description", "Описание вашего са
 		"MESSAGE_404" => "",
 		"ADD_PICT_PROP" => "-",
 		"LABEL_PROP" => "-",
-		"SEF_FOLDER" => SITE_DIR."projects/",
+		"SEF_FOLDER" => "/projects/",
 		"SECTIONS_HIDE_SECTION_NAME" => "N",
+		"SECTION_BACKGROUND_IMAGE" => "-",
+		"DETAIL_BACKGROUND_IMAGE" => "-",
+		"DISABLE_INIT_JS_IN_COMPONENT" => "N",
 		"SEF_URL_TEMPLATES" => array(
 			"sections" => "",
 			"section" => "/#SECTION_CODE#/",
-			"element" => "#SECTION_CODE#/#ELEMENT_ID#/",
+			"element" => "#SECTION_CODE#/#ELEMENT_CODE#/",
 			"compare" => "compare.php?action=#ACTION_CODE#",
 			"smart_filter" => "#SECTION_ID#/filter/#SMART_FILTER_PATH#/apply/",
 		),
@@ -142,6 +145,6 @@ $APPLICATION->SetPageProperty("description", "Описание вашего са
 		)
 	),
 	false
-	);?>
+);?>
 </div>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
