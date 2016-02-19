@@ -62,6 +62,7 @@ $this->setFrameMode(true);
 <script>
 	$(document).ready(function(){
 		$(".column_5 input").keyup(function(){
+			//debugger;
 			var price;
 			price = new Array();
 			$(".column_5 input").each(function(indx, element){

@@ -1,6 +1,12 @@
 <?
 $arUrlRewrite = array(
 	array(
+		"CONDITION" => "#^/projects/#",
+		"RULE" => "",
+		"ID" => "bitrix:catalog",
+		"PATH" => "/projects/index.php",
+	),
+	array(
 		"CONDITION" => "#^/services/#",
 		"RULE" => "",
 		"ID" => "bitrix:news",
@@ -11,12 +17,6 @@ $arUrlRewrite = array(
 		"RULE" => "",
 		"ID" => "bitrix:news",
 		"PATH" => "/articles/index.php",
-	),
-	array(
-		"CONDITION" => "#^/projects/#",
-		"RULE" => "",
-		"ID" => "bitrix:catalog",
-		"PATH" => "/projects/index.php",
 	),
 );
 

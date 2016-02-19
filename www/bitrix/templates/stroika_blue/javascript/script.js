@@ -8,7 +8,7 @@ $('.bxslider').bxSlider({
 	moveSlides: 1,
 });
 
-/* Форма обратной связи */
+/* Р¤РѕСЂРјР° РѕР±СЂР°С‚РЅРѕР№ СЃРІСЏР·Рё */
 $(".header_contact button").click(function(){	
 	$("#leave_application").slideDown("normal");
 	$(".background").fadeIn(500);
@@ -35,18 +35,18 @@ $("#leave_application").css({"margin-left": "-"+$("#leave_application").outerWid
 $("#request_call").css({"margin-left": "-"+$("#request_call").outerWidth() / 2+"px","margin-top":"-"+$("#request_call").outerHeight() / 2+"px"});
 
 
-/* Анимация для слайдера на главной странице */
+/* РђРЅРёРјР°С†РёСЏ РґР»СЏ СЃР»Р°Р№РґРµСЂР° РЅР° РіР»Р°РІРЅРѕР№ СЃС‚СЂР°РЅРёС†Рµ */
 $("#slides .slide_text .title").addClass("fadeInRight animated_one");
 $("#slides .slide_text .description").addClass("fadeInRight animated_second");
 $("#slides .slide_text .more").addClass("fadeInRight animated_three");
 
 
-/* Подстановка высоты footer и hFooter */
+/* РџРѕРґСЃС‚Р°РЅРѕРІРєР° РІС‹СЃРѕС‚С‹ footer Рё hFooter */
 $(".hFooter").height($("footer").innerHeight());
 $("footer").css("margin-top","-"+$("footer").innerHeight()+"px");
 
 
-/* Слайдер */
+/* РЎР»Р°Р№РґРµСЂ */
 $("#slides .slide_text").css({"margin-top":"-"+$("#slides .slide_text").height() / 2 +"px"});
 $("#slides .slides_images").css({"width":$(window).width()+"px"});
 $(window).resize(function(){
@@ -58,7 +58,7 @@ $(window).resize(function(){
 $(".prev, .next").css({"margin-top":"-"+$(".prev").height() / 2+"px"});
 
 
-/* В проектах показать еще элементы */
+/* Р’ РїСЂРѕРµРєС‚Р°С… РїРѕРєР°Р·Р°С‚СЊ РµС‰Рµ СЌР»РµРјРµРЅС‚С‹ */
 $(".projects").on('click', 'button', function(){
 	startLoadingAnimation();
 	$.ajax({
@@ -77,6 +77,26 @@ $(".projects").on('click', 'button', function(){
 	});
 });
 
+(function more_item_button() {
+	$("#more_services").on('click', function () {
+		startLoadingAnimation();
+		$.ajax({
+			async: false,
+			type: "POST",
+			url: $(this).attr("data-site-id") + "ajax_script/services.php",
+			data: "ajax_array=" + $(this).attr("data-all-count") + "&section_id=" + $(this).attr("data-section-id"),
+			dataType: "html",
+			success: function (data) {
+				setTimeout(function () {
+					$("#detail_list").html("");
+					$(".loadImg").hide();
+					$("#detail_list").html(data);
+					more_item_button();
+				}, 1000);
+			}
+		});
+	});
+})();
 function startLoadingAnimation()
 {
 	var imgObj = $(".loadImg");
@@ -87,7 +107,7 @@ function startLoadingAnimation()
 }
 
 
-/* Блок конечной суммы в калькуляторе */
+/* Р‘Р»РѕРє РєРѕРЅРµС‡РЅРѕР№ СЃСѓРјРјС‹ РІ РєР°Р»СЊРєСѓР»СЏС‚РѕСЂРµ */
 $(".calculator tbody .column_5 input").keyup(function(){
 	var total_price = 0;
 	$(".calculator tbody .column_5 input").each(function(){
@@ -102,11 +122,11 @@ $(".calculator tbody .column_5 input").keyup(function(){
 	var count = $(this).val();
 	var price = parseInt($(this).attr("data-price"));
 	var parent = $(this).parentsUntil("tbody");
-	$("> .column_6 span", parent).text(count * price +" руб.");
+	$("> .column_6 span", parent).text(count * price +" СЂСѓР±.");
 });
 
 
-/* Проверяем корректно ли отправилось сообщение */
+/* РџСЂРѕРІРµСЂСЏРµРј РєРѕСЂСЂРµРєС‚РЅРѕ Р»Рё РѕС‚РїСЂР°РІРёР»РѕСЃСЊ СЃРѕРѕР±С‰РµРЅРёРµ */
 var url = window.location.search;
 var arrayVar = (url.substr(1)).split('&');
 var valueAndKey = [];
@@ -121,7 +141,7 @@ for (i = 0; i < arrayVar.length; i++) {
 	}
 }
 
-/* Блок об успешной отправки сообщения */
+/* Р‘Р»РѕРє РѕР± СѓСЃРїРµС€РЅРѕР№ РѕС‚РїСЂР°РІРєРё СЃРѕРѕР±С‰РµРЅРёСЏ */
 $(".dialog").css({"margin-left": "-"+$(".dialog").outerWidth() / 2+"px","margin-top":"-"+$(".dialog").outerHeight() / 2+"px"});
 $(".dialog button").click(function(){
 	$(".dialog").removeClass("dialog-open").addClass("dialog-close");
@@ -136,7 +156,7 @@ $(".background").click(function(){
 	$("#request_call").slideUp("normal");
 });
 
-/* Фиксированное меню */
+/* Р¤РёРєСЃРёСЂРѕРІР°РЅРЅРѕРµ РјРµРЅСЋ */
 var $menu = $("#top_menu");
 $(window).scroll(function(){
 	if((device.windows() || device.fxos()) && $(window).width() > '1023') {
@@ -148,7 +168,7 @@ $(window).scroll(function(){
 	}
 });
 
-/* Вернуться наверх */
+/* Р’РµСЂРЅСѓС‚СЊСЃСЏ РЅР°РІРµСЂС… */
 var offset = 300,
 offset_opacity = 1200,
 scroll_top_duration = 700,
@@ -187,43 +207,43 @@ $(pull).on('click', function(e) {
 	menu.slideToggle();
 });	
 
-/* фиксированное поле с калькулятором */		
-var a = document.querySelector('.calculator .total_price'), b = null;  // селектор блока, который нужно закрепить
+/* С„РёРєСЃРёСЂРѕРІР°РЅРЅРѕРµ РїРѕР»Рµ СЃ РєР°Р»СЊРєСѓР»СЏС‚РѕСЂРѕРј */		
+var a = document.querySelector('.calculator .total_price'), b = null;  // СЃРµР»РµРєС‚РѕСЂ Р±Р»РѕРєР°, РєРѕС‚РѕСЂС‹Р№ РЅСѓР¶РЅРѕ Р·Р°РєСЂРµРїРёС‚СЊ
 if(a){
 	window.addEventListener('scroll', Ascroll, false);
-	document.body.addEventListener('scroll', Ascroll, false);  // если у html и body высота равна 100%
+	document.body.addEventListener('scroll', Ascroll, false);  // РµСЃР»Рё Сѓ html Рё body РІС‹СЃРѕС‚Р° СЂР°РІРЅР° 100%
 	function Ascroll() {
-	  if (b == null) {  // добавить потомка-обёртку, чтобы убрать зависимость с соседями
+	  if (b == null) {  // РґРѕР±Р°РІРёС‚СЊ РїРѕС‚РѕРјРєР°-РѕР±С‘СЂС‚РєСѓ, С‡С‚РѕР±С‹ СѓР±СЂР°С‚СЊ Р·Р°РІРёСЃРёРјРѕСЃС‚СЊ СЃ СЃРѕСЃРµРґСЏРјРё
 		var Sa = getComputedStyle(a, ''), s = '';
-		for (var i = 0; i < Sa.length; i++) {  // перечислить стили CSS, которые нужно скопировать с родителя
+		for (var i = 0; i < Sa.length; i++) {  // РїРµСЂРµС‡РёСЃР»РёС‚СЊ СЃС‚РёР»Рё CSS, РєРѕС‚РѕСЂС‹Рµ РЅСѓР¶РЅРѕ СЃРєРѕРїРёСЂРѕРІР°С‚СЊ СЃ СЂРѕРґРёС‚РµР»СЏ
 		  if (Sa[i].indexOf('padding') == 0) {
 			s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
 		  }
 		}
-		b = document.createElement('div');  // создать потомка
+		b = document.createElement('div');  // СЃРѕР·РґР°С‚СЊ РїРѕС‚РѕРјРєР°
 		//b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
-		a.insertBefore(b, a.firstChild);  // поместить потомка в цепляющийся блок первым
+		a.insertBefore(b, a.firstChild);  // РїРѕРјРµСЃС‚РёС‚СЊ РїРѕС‚РѕРјРєР° РІ С†РµРїР»СЏСЋС‰РёР№СЃСЏ Р±Р»РѕРє РїРµСЂРІС‹Рј
 		var l = a.childNodes.length;
-		for (var i = 1; i < l; i++) {  // переместить во вновь созданного потомка всех остальных потомков (итого: создан потомок-обёртка, внутри которого по прежнему работают скрипты)
+		for (var i = 1; i < l; i++) {  // РїРµСЂРµРјРµСЃС‚РёС‚СЊ РІРѕ РІРЅРѕРІСЊ СЃРѕР·РґР°РЅРЅРѕРіРѕ РїРѕС‚РѕРјРєР° РІСЃРµС… РѕСЃС‚Р°Р»СЊРЅС‹С… РїРѕС‚РѕРјРєРѕРІ (РёС‚РѕРіРѕ: СЃРѕР·РґР°РЅ РїРѕС‚РѕРјРѕРє-РѕР±С‘СЂС‚РєР°, РІРЅСѓС‚СЂРё РєРѕС‚РѕСЂРѕРіРѕ РїРѕ РїСЂРµР¶РЅРµРјСѓ СЂР°Р±РѕС‚Р°СЋС‚ СЃРєСЂРёРїС‚С‹)
 		  b.appendChild(a.childNodes[1]);
 		}
-		//a.style.height = b.getBoundingClientRect().height + 'px';  // если под скользящим элементом есть другие блоки, можно своё значение
+		//a.style.height = b.getBoundingClientRect().height + 'px';  // РµСЃР»Рё РїРѕРґ СЃРєРѕР»СЊР·СЏС‰РёРј СЌР»РµРјРµРЅС‚РѕРј РµСЃС‚СЊ РґСЂСѓРіРёРµ Р±Р»РѕРєРё, РјРѕР¶РЅРѕ СЃРІРѕС‘ Р·РЅР°С‡РµРЅРёРµ
 		//a.style.padding = '0';
 		//a.style.border = '0';
 	  }
-	  if (a.getBoundingClientRect().top <= 0) { // elem.getBoundingClientRect() возвращает в px координаты элемента относительно верхнего левого угла области просмотра окна браузера
+	  if (a.getBoundingClientRect().top <= 0) { // elem.getBoundingClientRect() РІРѕР·РІСЂР°С‰Р°РµС‚ РІ px РєРѕРѕСЂРґРёРЅР°С‚С‹ СЌР»РµРјРµРЅС‚Р° РѕС‚РЅРѕСЃРёС‚РµР»СЊРЅРѕ РІРµСЂС…РЅРµРіРѕ Р»РµРІРѕРіРѕ СѓРіР»Р° РѕР±Р»Р°СЃС‚Рё РїСЂРѕСЃРјРѕС‚СЂР° РѕРєРЅР° Р±СЂР°СѓР·РµСЂР°
 		b.className = 'total_fixed_price';
 	  } else {
 		b.className = '';
 	  }
 	  window.addEventListener('resize', function() {
 		a.children[0].style.width = getComputedStyle(a, '').width
-	  }, false);  // если изменить размер окна браузера, измениться ширина элемента
+	  }, false);  // РµСЃР»Рё РёР·РјРµРЅРёС‚СЊ СЂР°Р·РјРµСЂ РѕРєРЅР° Р±СЂР°СѓР·РµСЂР°, РёР·РјРµРЅРёС‚СЊСЃСЏ С€РёСЂРёРЅР° СЌР»РµРјРµРЅС‚Р°
 	}
 }
 
 
-/* Блок переключения цвета */
+/* Р‘Р»РѕРє РїРµСЂРµРєР»СЋС‡РµРЅРёСЏ С†РІРµС‚Р° */
 $('.style-switcher .switch').click(function(e){
 	e.preventDefault();
 	var styleswitcher = $(this).closest('.style-switcher');
