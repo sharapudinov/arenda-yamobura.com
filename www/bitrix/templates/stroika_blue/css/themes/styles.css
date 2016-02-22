@@ -271,7 +271,7 @@ div.load_bg{background:url("images/bg_loading.png"), #fff; width:100%; height:10
 			.projects_photo img{width:100%; display:block; height:180px; transition: transform 0.2s ease-in;}
 	.projects_detail_text{border-bottom:1px dotted #ccc; padding:0 0 10px 0; margin:0 0 10px 0;}	
 		.projects_detail_text p{color:#4c4c4c; font-size:16px; margin:0 0 10px 0;}
-		.projects_detail_text li{color:#4c4c4c; font-size:16px; margin:0 0 10px 0; list-style-image:url("images/li_icon.jpg"); list-style-position: inside; vertical-align: top;}
+		.projects_detail_text li{color:#4c4c4c; font-size:16px; margin:0 0 10px 32px; list-style-image:url("images/li_icon.jpg"); list-style-position: inside; vertical-align: top;}
 	.projects_interesting{overflow:hidden;}
 		.projects_interesting_element{float:left; width:25%; box-sizing:border-box; padding:0 20px 0 0;}
 			.projects_interesting_element a{margin:0 0 10px 0; display:block; position: relative; overflow:hidden;}
@@ -362,7 +362,10 @@ div.load_bg{background:url("images/bg_loading.png"), #fff; width:100%; height:10
 			.services_section_item a.animation_img{position: relative; display:block; overflow:hidden; margin:0 0 10px 0;}
 			.services_section_item img{width:100%; display:block; height:200px; transition: transform 0.2s ease-in;}
 			.services_section_item .description{margin:0 0 10px 0;}
-				.services_section_item .description h2{font-size:18px; font-family: PTSansBold; margin:0 0 10px 0; text-transform:none;}
+				.services_section_item .description h2{
+					font-size:18px; font-family: PTSansBold; margin:0 0 10px 0; text-transform:none;
+					text-align: center;
+				}
 					.services_section_item .description h2 a{color:#009de5;}
 					.services_section_item .description h2 a:hover{text-decoration:none;}
 				.services_section_item .description div{color:#4c4c4c; font-size:16px;}
