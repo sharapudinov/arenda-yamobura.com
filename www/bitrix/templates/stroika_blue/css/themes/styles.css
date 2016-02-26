@@ -15,7 +15,7 @@
 					.header_search button{border: none; background: url("images/search_icon_blue.png") no-repeat center center; width: 20px; height: 21px; position: absolute; top:10px; right:0; z-index: 10; cursor: pointer;}
 					.header_address{background: url("images/address_icon.png") no-repeat; height: 26px; padding:0 0 0 30px; line-height: 25px;}
 				.header_contact{float:left; width:30%; text-align:right;}
-					.header_phone{color: #000; background: url("images/phone_icon.png") no-repeat; height: 29px; display:inline-block; margin:0 0 10px 0; padding:0 0 0 35px; font-size:25px; font-family:PTSansBold;}
+					.header_phone{color: #000; background: url("images/phone_icon.png") no-repeat; background-position: 0px 15px; height: 60px; display:inline-block; margin:0 0 10px 0; padding:0 0 0 35px; font-size:25px; font-family:PTSansBold;}
 					.header_email{margin:0 0 10px 0; color:#b3b3b3;}
 						.header_email > p{display:inline-block;}
 						.header_email > div{display:inline-block;}
@@ -104,8 +104,8 @@
 					.about_company_center h1{text-align:center; text-transform:inherit; font-family:PTSansBold; font-size:30px; color:#fff; margin:0 0 15px 0;}
 					.about_company_center > div p{color:#fff; text-align:justify; margin:0 0 10px 0;}
 					.about_company_center .about_company_img{position:absolute; bottom:-90px; left:50%; margin:0 0 0 -163px;
-					background:url('images/about_yamobur.png') no-repeat center center; width:326px; height:244px;}
-		.last_work{padding:100px 0 25px 0;}
+					background:url('images/about_home.png') no-repeat center center; width:326px; height:244px;}
+		.last_work{padding:15px 0 25px 0;}
 			.last_work_center{max-width:1000px; margin:0 auto; overflow:hidden;}
 				.last_work_center h2{text-align:center; text-transform:inherit; color:#010101; font-size:30px; margin:0 0 15px 0;}
 				.last_work_element{float:left; width:25%; padding:0 10px 0 0; box-sizing:border-box; margin:0 0 15px 0;}
@@ -151,7 +151,7 @@
 					.footer_address{background: url("images/address_icon_footer.png") no-repeat; min-height: 25px; padding:0 0 0 30px; line-height: 24px; color:#ccc;}
 					.footer_email{background: url("images/email_icon.png") no-repeat; height: 21px; padding:0 0 0 30px; line-height: 24px; color:#ccc;}
 				.footer_telephone{width:24%; float:left; color:#ccc;}	
-					.footer_phone{margin:0 0 8px 0; background: url("images/phone_icon_footer.png") no-repeat; height: 48px; padding:0 0 0 30px; line-height: 24px; color:#ccc; font-size:25px; font-family:PTSansBold;}
+					.footer_phone{margin:0 0 8px 0; background: url("images/phone_icon_footer.png") no-repeat; background-position: 0px 8px; height: 48px; padding:0 0 0 30px; line-height: 24px; color:#ccc; font-size:25px; font-family:PTSansBold;}
 					.footer_telephone p{display:inline-block;}
 						.footer_telephone p a{color:#ccc;}
 				.footer_social{width:22%; float:left; text-align: center;}
@@ -271,7 +271,7 @@ div.load_bg{background:url("images/bg_loading.png"), #fff; width:100%; height:10
 			.projects_photo img{width:100%; display:block; height:180px; transition: transform 0.2s ease-in;}
 	.projects_detail_text{border-bottom:1px dotted #ccc; padding:0 0 10px 0; margin:0 0 10px 0;}	
 		.projects_detail_text p{color:#4c4c4c; font-size:16px; margin:0 0 10px 0;}
-		.projects_detail_text li{color:#4c4c4c; font-size:16px; margin:0 0 10px 0; list-style-image:url("images/li_icon.jpg"); list-style-position: inside; vertical-align: top;}
+		.projects_detail_text li{color:#4c4c4c; font-size:16px; margin:0 0 10px 32px; list-style-image:url("images/li_icon.jpg"); list-style-position: inside; vertical-align: top;}
 	.projects_interesting{overflow:hidden;}
 		.projects_interesting_element{float:left; width:25%; box-sizing:border-box; padding:0 20px 0 0;}
 			.projects_interesting_element a{margin:0 0 10px 0; display:block; position: relative; overflow:hidden;}
@@ -362,7 +362,10 @@ div.load_bg{background:url("images/bg_loading.png"), #fff; width:100%; height:10
 			.services_section_item a.animation_img{position: relative; display:block; overflow:hidden; margin:0 0 10px 0;}
 			.services_section_item img{width:100%; display:block; height:200px; transition: transform 0.2s ease-in;}
 			.services_section_item .description{margin:0 0 10px 0;}
-				.services_section_item .description h2{font-size:18px; font-family: PTSansBold; margin:0 0 10px 0; text-transform:none;}
+				.services_section_item .description h2{
+					font-size:18px; font-family: PTSansBold; margin:0 0 10px 0; text-transform:none;
+					text-align: center;
+				}
 					.services_section_item .description h2 a{color:#009de5;}
 					.services_section_item .description h2 a:hover{text-decoration:none;}
 				.services_section_item .description div{color:#4c4c4c; font-size:16px;}
@@ -375,6 +378,14 @@ div.load_bg{background:url("images/bg_loading.png"), #fff; width:100%; height:10
 	.services_detail_item h1{font-size:28px; margin:0 0 20px 0; text-transform:none;}
 	.services_detail_item > img{margin:0 10px 10px 0; float:left;}
 	.services_detail_item > div{margin:0 0 15px 0; text-align:justify;}
+    .services_detail_item > div  li {
+        color: #4c4c4c;
+        font-size: 16px;
+        margin: 0 0 10px 32px;
+        list-style-image: url("images/li_icon.jpg");
+        list-style-position: inside;
+        vertical-align: top;
+    }
 /* Поиск */
 .search_page{}
 	.search_page h1{font-size: 28px; margin:0 0 20px 0;}
@@ -509,3 +520,21 @@ line-height: 32px;color: #444;vertical-align: middle;}
 .animated_second{animation-duration:2s;}
 .animated_three{animation-duration:3s;}
 a.return_back{color: #008fd2;font-size: 16px;}
+
+.text-css p{
+    margin: 0 0 10px;
+}
+
+.text-css h2, .text-css h3, .text-css h4{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.text-css li {
+    color: #4c4c4c;
+    font-size: 16px;
+    margin: 0 0 10px 32px;
+    list-style-image: url("images/li_icon.jpg");
+    list-style-position: inside;
+    vertical-align: top;
+}
