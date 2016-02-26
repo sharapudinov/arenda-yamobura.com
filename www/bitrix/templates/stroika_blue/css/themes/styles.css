@@ -16,6 +16,13 @@
 					.header_address{background: url("images/address_icon.png") no-repeat; height: 26px; padding:0 0 0 30px; line-height: 25px;}
 				.header_contact{float:left; width:30%; text-align:right;}
 					.header_phone{color: #000; background: url("images/phone_icon.png") no-repeat; background-position: 0px 15px; height: 60px; display:inline-block; margin:0 0 10px 0; padding:0 0 0 35px; font-size:25px; font-family:PTSansBold;}
+					.header_phone a{
+						color: #337ab7;
+						text-decoration: none;
+					}
+					.header_phone a:hover{
+						text-decoration: underline;
+					}
 					.header_email{margin:0 0 10px 0; color:#b3b3b3;}
 						.header_email > p{display:inline-block;}
 						.header_email > div{display:inline-block;}
@@ -150,8 +157,22 @@
 				.footer_guide{width:32%; float:left;}
 					.footer_address{background: url("images/address_icon_footer.png") no-repeat; min-height: 25px; padding:0 0 0 30px; line-height: 24px; color:#ccc;}
 					.footer_email{background: url("images/email_icon.png") no-repeat; height: 21px; padding:0 0 0 30px; line-height: 24px; color:#ccc;}
+					.footer_email a{
+						color: #337ab7;
+						text-decoration: none;
+					}
+					.footer_email a:hover{
+						text-decoration: underline;
+					}
 				.footer_telephone{width:24%; float:left; color:#ccc;}	
 					.footer_phone{margin:0 0 8px 0; background: url("images/phone_icon_footer.png") no-repeat; background-position: 0px 8px; height: 48px; padding:0 0 0 30px; line-height: 24px; color:#ccc; font-size:25px; font-family:PTSansBold;}
+					.footer_phone a{
+						color: #337ab7;
+						text-decoration: none;
+					}
+					.footer_phone a:hover{
+						text-decoration: underline;
+					}
 					.footer_telephone p{display:inline-block;}
 						.footer_telephone p a{color:#ccc;}
 				.footer_social{width:22%; float:left; text-align: center;}

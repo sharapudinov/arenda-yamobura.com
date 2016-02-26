@@ -38,7 +38,11 @@ $this->setFrameMode(true);
 				<td class="column_1"><?=$arElement["PROPERTY_UNITS_VALUE"];?></td>
 				<td class="column_2 name"><?=$arElement["NAME"];?></td> 
 				<td class="column_3"><?=$arElement["PROPERTY_HARACTERISTIC_VALUE"];?></td>
-				<td class="column_4 price"><?=$arElement["PROPERTY_PRICE_NDS_VALUE"];?> <?=GetMessage("RUB");?></td>
+				<td class="column_4 price">
+					<?if ($arElement["PROPERTY_PRICE_NDS_VALUE"]):?>
+							<?= $arElement["PROPERTY_PRICE_NDS_VALUE"]." ".GetMessage("RUB")?>
+					<?endif?>
+					</td>
 				<td class="column_5 price"><?=$arElement["PROPERTY_PRICE_VALUE"];?> <?=GetMessage("RUB");?></td>
 			</tr>
 		<?}}?>
