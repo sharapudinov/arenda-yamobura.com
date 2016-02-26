@@ -1,10 +1,10 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetPageProperty("title", "Аренда спецтехники в Москве • Компания «МСТ»");
-$APPLICATION->SetTitle("Ваш сайт");
+$APPLICATION->SetPageProperty("title", "Аренда спецтехники в Москве и Московкой области");
+$APPLICATION->SetTitle("Аренда спецтехники в Москве и Московкой области");
 $APPLICATION->SetPageProperty("tags", "Главная");
-$APPLICATION->SetPageProperty("keywords", "Ключевые, слова, вашего, сайта");
-$APPLICATION->SetPageProperty("description", "Описание вашего сайта");
+$APPLICATION->SetPageProperty("keywords", "аренда спецтехники на день в москве, нанять экскаватор, сайт аренды спецтехники, аренда спецтехники цены, экскаватор заказать, аренда экскаватора цена, услуги экскаватора, услуги ямобура, аренда ямобура");
+$APPLICATION->SetPageProperty("description", "Аренда спецтехники в Москве и  Московской области. Доступные цены. Всегда исправная техника!");
 ?>
 </div>
 <div class="pros">
@@ -138,7 +138,7 @@ $APPLICATION->SetPageProperty("description", "Описание вашего са
 		"SECTION_COUNT_ELEMENTS" => "Y",
 		"SECTION_ID_VARIABLE" => "SECTION_ID",
 		"SECTION_TOP_DEPTH" => "2",
-		"SEF_FOLDER" => "/services/",
+		"SEF_FOLDER" => "/",
 		"SEF_MODE" => "Y",
 		"SET_LAST_MODIFIED" => "N",
 		"SET_STATUS_404" => "N",
@@ -171,8 +171,8 @@ $APPLICATION->SetPageProperty("description", "Описание вашего са
 		"USE_STORE" => "N",
 		"SEF_URL_TEMPLATES" => array(
 			"sections" => "",
-			"section" => "#SECTION_CODE#/",
-			"element" => "#SECTION_CODE#/#ELEMENT_CODE#/",
+			"section" => "services/#SECTION_CODE#/",
+			"element" => "services/#SECTION_CODE#/#ELEMENT_CODE#/",
 			"compare" => "compare.php?action=#ACTION_CODE#",
 			"smart_filter" => "#SECTION_ID#/filter/#SMART_FILTER_PATH#/apply/",
 		),
