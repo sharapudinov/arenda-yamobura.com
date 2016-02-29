@@ -43,7 +43,7 @@ $this->setFrameMode(true);
 							<?= $arElement["PROPERTY_PRICE_NDS_VALUE"]." ".GetMessage("RUB")?>
 					<?endif?>
 					</td>
-				<td class="column_5 price"><?=$arElement["PROPERTY_PRICE_VALUE"];?> <?=GetMessage("RUB");?></td>
+				<td class="column_5 price">от <?=$arElement["PROPERTY_PRICE_VALUE"];?> <?=GetMessage("RUB");?></td>
 			</tr>
 		<?}}?>
 		</tbody>

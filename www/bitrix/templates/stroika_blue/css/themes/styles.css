@@ -42,6 +42,10 @@
 					background: linear-gradient(to bottom, #ffb300 5%,#ff8800 100%); /* W3C */
 					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb300', endColorstr='#ff8800',GradientType=0 ); /* IE6-9 */
 					}
+
+					.header_contact button:hover{
+						color:#4c4c4c;
+					}
 		.fixed_menu{ position:fixed; top:0; left:0; width:100%; z-index:888;}
 		#mobile_menu{font-family: PTSansBold;display:none;font-size:16px;font-weight:bold;color:#fff;text-decoration:none;padding:10px 20px;
 		width:100%;position:relative; box-sizing:border-box;}
@@ -208,6 +212,39 @@
 					.price table tbody td:last-child{border-right:none;}
 						.price table tbody td.price{font-family:PTSansBold;}
 						.price table tbody td.name{text-align:left; padding:10px 0 10px 10px;}
+
+		.price p{
+			color: #4c4c4c;
+			font-size: 22px;
+			font-weight: bold;
+			text-align:center;
+			text-transform:inherit;
+			margin:0 0 25px 0;
+		}
+
+		.price a{
+			border-radius:5px;
+			border:1px solid #ff8800;
+			color:#fff;
+			font-size:17px;
+			font-family:PTSansBold;
+			text-transform: uppercase;
+			text-decoration: none;
+			padding:4px 12px;
+			cursor:pointer;
+			background: #ffb300; /* Old browsers */
+			background: -moz-linear-gradient(top, #ffb300 5%, #ff8800 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#ffb300), color-stop(100%,#ff8800)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top, #ffb300 5%,#ff8800 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top, #ffb300 5%,#ff8800 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top, #ffb300 5%,#ff8800 100%); /* IE10+ */
+			background: linear-gradient(to bottom, #ffb300 5%,#ff8800 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb300', endColorstr='#ff8800',GradientType=0 ); /* IE6-9 */
+		}
+
+		.price a:hover{
+			color:#4c4c4c;
+		}
 /* Калькулятор */
 .calculator{position:relative;}
 	.calculator h1{color:#010101; font-size:30px; text-align:center; text-transform:inherit; margin:0 0 25px 0;}
@@ -545,6 +582,10 @@ a.return_back{color: #008fd2;font-size: 16px;}
 .text-css p{
     margin: 0 0 10px;
 }
+
+		.text-css p img{
+			margin: 20px 0 20px 0;
+		}
 
 .text-css h2, .text-css h3, .text-css h4{
     margin-top: 20px;
