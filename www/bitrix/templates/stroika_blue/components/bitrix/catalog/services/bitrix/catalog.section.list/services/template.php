@@ -34,7 +34,7 @@ $this->setFrameMode(true);
                 <span class="overlay"></span>
                 <img src="<?= $picture["src"] ?>" alt="<?= $arItem["NAME"] ?>" title="<?= $arItem["NAME"] ?>"
                      itemprop="image"/>
-                <span class="link"><i class="fa fa-link"></i></span>
+                <span class="link"><i class="fa fa-check"></i></span>
             </a>
             <div class="description">
                 <h2>
