@@ -160,7 +160,7 @@ CModule::IncludeModule("iblock");
 		"IBLOCK_TYPE" => "slider",
 		"IBLOCK_ID" => "6",
 		"NEWS_COUNT" => "",
-		"SORT_BY1" => "ACTIVE_FROM",
+		"SORT_BY1" => "SORT",
 		"SORT_ORDER1" => "DESC",
 		"SORT_BY2" => "SORT",
 		"SORT_ORDER2" => "ASC",

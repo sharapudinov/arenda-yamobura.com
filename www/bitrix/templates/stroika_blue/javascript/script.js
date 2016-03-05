@@ -9,7 +9,9 @@ $('.bxslider').bxSlider({
 });
 
 /* Форма обратной связи */
-$(".header_contact button").click(function(){	
+$(".header_contact button, .projects_info input").click(function(e){
+	debugger;
+	e.preventDefault();
 	$("#leave_application").slideDown("normal");
 	$(".background").fadeIn(500);
 });

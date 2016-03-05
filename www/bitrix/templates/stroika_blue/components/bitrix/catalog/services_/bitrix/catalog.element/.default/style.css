@@ -1,0 +1,12 @@
+.projects_info input {
+    border-radius: 5px;
+    border: 1px solid #ff8800;
+    background: #ff8800;
+    color: #fff;
+    font-size: 17px;
+    font-family: PTSansBold;
+    padding: 4px 12px;
+    cursor: pointer;
+    width: 100%;
+
+}
