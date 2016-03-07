@@ -12,7 +12,7 @@ AddMessage2Log($APPLICATION->GetCurDir());
 	<meta property="og:title" content="<?$APPLICATION->ShowTitle()?>" />
 	<meta property="og:image" content="<?=SITE_TEMPLATE_PATH;?>/images/logo.png" />
 	<link rel="index" title="Ваш сайт" href="/" />
-	<meta name="application-name" content="Ваш сайт" />
+	<meta name="application-name" content="Arenda-Yamobure.com" />
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="shortcut icon" href="/favicon.ico" />
@@ -94,28 +94,34 @@ CModule::IncludeModule("iblock");
 				<div class="logo">
 					<?$APPLICATION->IncludeFile(SITE_DIR."include/header/logo.php", Array(), Array("MODE" => "html","NAME" => "ваш логотип"));?>
 				</div>
-				<div class="header_search">
-					<?$APPLICATION->IncludeComponent("bitrix:search.form", "search", Array(
-						"COMPONENT_TEMPLATE" => "flat",
-							"PAGE" => "#SITE_DIR#search/",	// Страница выдачи результатов поиска (доступен макрос #SITE_DIR#)
-							"USE_SUGGEST" => "N",	// Показывать подсказку с поисковыми фразами
-						),
-						false
-					);?>
-					<div class="header_address">
-						<?$APPLICATION->IncludeFile(SITE_DIR."include/header/address.php", Array(), Array("MODE" => "html","NAME" => "ваш адрес"));?>
+
+					<div class="header_search">
+						<noindex>
+							<?$APPLICATION->IncludeComponent("bitrix:search.form", "search", Array(
+								"COMPONENT_TEMPLATE" => "flat",
+									"PAGE" => "#SITE_DIR#search/",	// Страница выдачи результатов поиска (доступен макрос #SITE_DIR#)
+									"USE_SUGGEST" => "N",	// Показывать подсказку с поисковыми фразами
+								),
+								false
+							);?>
+						</noindex>
+						<div class="header_address">
+							<?$APPLICATION->IncludeFile(SITE_DIR."include/header/address.php", Array(), Array("MODE" => "html","NAME" => "ваш адрес"));?>
+						</div>
 					</div>
-				</div>
+
 				<div class="header_contact">
 					<div class="header_phone">
 					<?$APPLICATION->IncludeFile(SITE_DIR."include/header/phone.php", Array(), Array("MODE" => "html","NAME" => "ваш номер телефона"));?>
 					</div>
-					<div class="header_email">
-						<p><a href="#"><?=GetMessage("ADD_PHONE");?></a></p> | 
-						<div>
-						<?$APPLICATION->IncludeFile(SITE_DIR."include/header/email.php", Array(), Array("MODE" => "html","NAME" => "ваш email"));?>
+					<noindex>
+						<div class="header_email">
+							<p><a href="#" title="Закзать обратный звонок для аренды спецтехники" rel="nofollow"><?=GetMessage("ADD_PHONE");?></a></p> |
+							<div>
+							<?$APPLICATION->IncludeFile(SITE_DIR."include/header/email.php", Array(), Array("MODE" => "html","NAME" => "ваш email"));?>
+							</div>
 						</div>
-					</div>
+					</noindex>
 					<button><?=GetMessage("ADD_APL");?></button>
 				</div>
 			</div>

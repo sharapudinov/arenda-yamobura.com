@@ -50,19 +50,30 @@ IncludeTemplateLangFile(__FILE__);
 					<div class="footer_phone">
 					<?$APPLICATION->IncludeFile(SITE_DIR."include/footer/phone.php", Array(), Array("MODE" => "html","NAME" => ""));?>
 					</div>
-					<p class="footer_telephone_request"><a href="#"><?=GetMessage("ADD_PHONE");?></a></p> <span>|</span> <p class="footer_telephone_application"><a href="#"><?=GetMessage("ADD_APL");?></a></p>
+
+					<noindex>
+						<p class="footer_telephone_request">
+							<a href="#" rel="nofollow" title="Закзать обратный звонок с Arenda-Yamobura.com"><?=GetMessage("ADD_PHONE");?></a>
+						</p> <span>|</span>
+						<p class="footer_telephone_application">
+							<a href="#" rel="nofollow" title="Оставить заявку на Arenda-Yamobura.com"><?=GetMessage("ADD_APL");?></a>
+						</p>
+					</noindex>
+
 				</div>
-				<div class="footer_social">
-					<a href="#" class="social_block">
-						<img class="social_facebook" src="<?=SITE_TEMPLATE_PATH;?>/css/themes/images/facebook_icon.png" alt="facebook" />
-					</a>
-					<a href="#" class="social_block">
-						<img class="social_twiter" src="<?=SITE_TEMPLATE_PATH;?>/css/themes/images/twiter_icon.png" alt="twiter" />
-					</a>
-					<a href="#" class="social_block">
-						<img class="social_vk" src="<?=SITE_TEMPLATE_PATH;?>/css/themes/images/vk_icon.png" alt="vk" />
-					</a>
-				</div>
+				<noindex>
+					<div class="footer_social">
+						<a href="#" class="social_block" rel="nofollow" title="Группа компании «МСТ» в Facebook">
+							<img class="social_facebook" src="<?=SITE_TEMPLATE_PATH;?>/css/themes/images/facebook_icon.png" alt="facebook" />
+						</a>
+						<a href="#" class="social_block" rel="nofollow" title="Группа компании «МСТ» в Twitter">
+							<img class="social_twiter" src="<?=SITE_TEMPLATE_PATH;?>/css/themes/images/twiter_icon.png" alt="twiter" />
+						</a>
+						<a href="#" class="social_block" rel="nofollow" title="Группа компании «МСТ» в Контакте">
+							<img class="social_vk" src="<?=SITE_TEMPLATE_PATH;?>/css/themes/images/vk_icon.png" alt="vk" />
+						</a>
+					</div>
+				</noindex>
 			</div>
 		</div>
 	</footer>

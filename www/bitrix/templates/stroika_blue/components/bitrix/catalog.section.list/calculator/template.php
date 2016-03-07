@@ -54,11 +54,13 @@ $this->setFrameMode(true);
 		<?=GetMessage("ITOG");?> 
 		<span>0</span> <?=GetMessage("RUB");?>
 </div>
-<div class="calculator_wrapper">
-	<div class="print_csv">
-		<a href="calculator.csv" download><?=GetMessage("PRINT");?></a>
+<noindex>
+	<div class="calculator_wrapper">
+		<div class="print_csv">
+			<a href="calculator.csv" download rel="nofollow" title="Скачать расчет стоимости аренды"><?=GetMessage("PRINT");?></a>
+		</div>
 	</div>
-</div>
+</noindex>
 <script>
 	$(document).ready(function(){
 		$(".column_5 input").keyup(function(){

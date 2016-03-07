@@ -631,3 +631,12 @@ a.return_back{color: #008fd2;font-size: 16px;}
 	margin: 0 0 15px 0;
 	font-family: PTSansBold;
 }
+
+.first-page li {
+	color: #4c4c4c;
+	font-size: 16px;
+	margin: 0 0 10px 32px;
+	list-style-image: url("images/li_icon.jpg");
+	list-style-position: inside;
+	vertical-align: top;
+}
