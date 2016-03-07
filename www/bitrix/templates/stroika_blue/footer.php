@@ -6,22 +6,26 @@ IncludeTemplateLangFile(__FILE__);
 	</div>
 	<footer>
 		<div class="footer_center">
-			<?$APPLICATION->IncludeComponent("bitrix:menu", "menu_footer", Array(
-				"ROOT_MENU_TYPE" => "top",	// ��� ���� ��� ������� ������
-					"MENU_CACHE_TYPE" => "A",	// ��� �����������
-					"MENU_CACHE_TIME" => "3600",	// ����� ����������� (���.)
-					"MENU_CACHE_USE_GROUPS" => "Y",	// ��������� ����� �������
-					"MENU_CACHE_GET_VARS" => "",	// �������� ���������� �������
-					"MAX_LEVEL" => "4",	// ������� ����������� ����
-					"CHILD_MENU_TYPE" => "left",	// ��� ���� ��� ��������� �������
-					"USE_EXT" => "N",	// ���������� ����� � ������� ���� .���_����.menu_ext.php
-					"DELAY" => "N",	// ����������� ���������� ������� ����
-					"ALLOW_MULTI_SELECT" => "N",	// ��������� ��������� �������� ������� ������������
-					"COMPONENT_TEMPLATE" => ".default",
-					"MENU_THEME" => "site"
-				),
-				false
-			);?>
+			<?$APPLICATION->IncludeComponent(
+	"bitrix:menu", 
+	"menu_footer", 
+	array(
+		"ROOT_MENU_TYPE" => "bottom",
+		"MENU_CACHE_TYPE" => "A",
+		"MENU_CACHE_TIME" => "3600",
+		"MENU_CACHE_USE_GROUPS" => "Y",
+		"MENU_CACHE_GET_VARS" => array(
+		),
+		"MAX_LEVEL" => "4",
+		"CHILD_MENU_TYPE" => "bottom",
+		"USE_EXT" => "N",
+		"DELAY" => "N",
+		"ALLOW_MULTI_SELECT" => "N",
+		"COMPONENT_TEMPLATE" => "menu_footer",
+		"MENU_THEME" => "site"
+	),
+	false
+);?>
 			<div class="footer_information">
 				<div class="footer_copyright">
 					<div>
