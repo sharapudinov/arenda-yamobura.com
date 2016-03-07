@@ -66,7 +66,7 @@ IncludeTemplateLangFile(__FILE__);
 						<a href="https://www.facebook.com/arendayamobura/" class="social_block" rel="nofollow" title="Группа компании «МСТ» в Facebook">
 							<img class="social_facebook" src="<?=SITE_TEMPLATE_PATH;?>/css/themes/images/facebook_icon.png" alt="facebook" />
 						</a>
-						<a href="#" class="social_block" rel="nofollow" title="Группа компании «МСТ» в Twitter">
+						<a href="https://twitter.com/yamobura" class="social_block" rel="nofollow" title="Группа компании «МСТ» в Twitter">
 							<img class="social_twiter" src="<?=SITE_TEMPLATE_PATH;?>/css/themes/images/twiter_icon.png" alt="twiter" />
 						</a>
 						<a href="https://vk.com/arenda_yamobura_com" class="social_block" rel="nofollow" title="Группа компании «МСТ» в Контакте">
