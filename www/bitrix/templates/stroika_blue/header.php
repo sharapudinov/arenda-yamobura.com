@@ -51,21 +51,21 @@ CModule::IncludeModule("iblock");
 	<p class="exit_form"></p>
 	<p class="big_text_form"><?=GetMessage("ADD_APL");?></p>
 	<?$APPLICATION->IncludeComponent(
-		"bitrix:main.feedback", 
-		"leave_application", 
-		array(
-			"COMPONENT_TEMPLATE" => "leave_application",
-			"USE_CAPTCHA" => "N",
-			"OK_TEXT" => "Спасибо, ваше сообщение принято.",
-			"EMAIL_TO" => COption::GetOptionString("main", "email_from"),
-			"REQUIRED_FIELDS" => array(
-			),
-			"EVENT_MESSAGE_ID" => array(
-				0 => "7",
-			)
+	"bitrix:main.feedback", 
+	"leave_application", 
+	array(
+		"COMPONENT_TEMPLATE" => "leave_application",
+		"USE_CAPTCHA" => "N",
+		"OK_TEXT" => "Спасибо, ваше сообщение принято.",
+		"EMAIL_TO" => COption::GetOptionString("main","email_from"),
+		"REQUIRED_FIELDS" => array(
 		),
-		false
-	);?>
+		"EVENT_MESSAGE_ID" => array(
+			0 => "7",
+		)
+	),
+	false
+);?>
 </div>
 <div id="request_call" class="order_form">
 	<p class="exit_form"></p>
@@ -227,11 +227,15 @@ CModule::IncludeModule("iblock");
 
 <div class="wrapper_center">
 <?if ($APPLICATION->GetCurPage(false)!=SITE_DIR){
-$APPLICATION->IncludeComponent("bitrix:breadcrumb", "breadcrumb", Array(
-	"COMPONENT_TEMPLATE" => ".default",
-		"START_FROM" => "0",	// Номер пункта, начиная с которого будет построена навигационная цепочка
-		"PATH" => "",	// Путь, для которого будет построена навигационная цепочка (по умолчанию, текущий путь)
-		"SITE_ID" => "s1",	// Cайт (устанавливается в случае многосайтовой версии, когда DOCUMENT_ROOT у сайтов разный)
+
+$APPLICATION->IncludeComponent(
+	"bitrix:breadcrumb", 
+	"breadcrumb", 
+	array(
+		"COMPONENT_TEMPLATE" => "breadcrumb",
+		"START_FROM" => "0",
+		"PATH" => "",
+		"SITE_ID" => "s1"
 	),
 	false
 );?>
