@@ -23,7 +23,7 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Калькулятор", 
-		"calculator/", 
+		"contacts/", 
 		Array(), 
 		Array(), 
 		"" 

@@ -1,1 +1,1 @@
-<a href="mailto:remont@bk.ru" class="email_decoration">remont@bk.ru</a>
+<a href="mailto:info@arenda-yamobura.com" class="email_decoration" title="Электронная почта ООО МСТ" rel="nofollow">Отправить письмо</a>

@@ -1,9 +1,10 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Калькулятор");
+$APPLICATION->SetPageProperty("title", "Калькулятор стоимости аренды спецтехники ");
+$APPLICATION->SetTitle("Калькулятор стоимости аренды спецтехники ");
 $APPLICATION->SetPageProperty("tags", "Калькулятор");
-$APPLICATION->SetPageProperty("keywords", "Ключевые, слова, вашего, сайта");
-$APPLICATION->SetPageProperty("description", "Описание вашего сайта");
+$APPLICATION->SetPageProperty("keywords", "бурение тисэ, забор на винтовых сваях цена с монтажом, установка винтовых свай цена, бурение свай тисэ, бурение под столбы забора цена, услуги ямобура в москве, монтаж винтовых свай цена, бурение отверстий под сваи фундамента цена");
+$APPLICATION->SetPageProperty("description", "Рассчитайте сами стоимость цены на услуги ямобура. Заказ и аренда спецтехники в Москве и Московской области по низким ценам.");
 ?>
 <?$APPLICATION->IncludeComponent(
 	"bitrix:catalog.section.list", 

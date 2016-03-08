@@ -342,7 +342,10 @@ $APPLICATION->SetPageProperty("description", "Аренда спецтехник�
 	false
 );?>
 	</div>
-	<?$APPLICATION->IncludeFile(SITE_DIR."include/index/seo.php", Array(), Array("MODE" => "html","NAME" => "ваш логотип"));?>
+
+	<div class="first-page">
+		<?$APPLICATION->IncludeFile(SITE_DIR."include/index/seo.php", Array(), Array("MODE" => "html","NAME" => "ваш логотип"));?>
+	</div>
 
 </div>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

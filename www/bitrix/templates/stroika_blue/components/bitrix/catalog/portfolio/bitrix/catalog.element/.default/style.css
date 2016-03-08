@@ -1,12 +1,16 @@
 .projects_info input {
-    border-radius: 5px;
-    border: 1px solid #ff8800;
-    background: #ff8800;
-    color: #fff;
-    font-size: 17px;
-    font-family: PTSansBold;
-    padding: 4px 12px;
-    cursor: pointer;
-    width: 100%;
+     border: 1px solid #ff8800;
+     background: #ff8800;
+     color: #fff;
+     font-size: 25px;
+     font-family: PTSansBold;
+     padding: 4px 12px;
+     cursor: pointer;
+     width: 100%;
+     border-bottom-left-radius: 5px;
+     border-bottom-right-radius: 5px;
+ }
 
+.projects_info input:hover {
+    color: #4c4c4c;
 }
