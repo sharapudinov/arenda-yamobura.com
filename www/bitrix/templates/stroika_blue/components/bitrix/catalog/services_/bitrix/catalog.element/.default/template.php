@@ -91,10 +91,13 @@ $arItemIDs = array(
         <? } ?>
     </div>
 <? endif; ?>
-<h3><?= GetMessage("OP"); ?></h3>
-<div class="projects_detail_text">
-    <?= $arResult['PREVIEW_TEXT']; ?>
-</div
+<noindex>
+    <h2><?= GetMessage("ARENDA_DETAIL"); ?></h2>
+    <div class="projects_detail_text">
+        <?= $arResult['PREVIEW_TEXT']; ?>
+    </div>
+</noindex>
+<h2><?= GetMessage("TEHNIKA_DETAIL"); ?></h2>
 <div class="projects_interesting">
     <?
     $projects_interesting = CIBlockElement::GetList(Array("rand" => "DESC"), array("IBLOCK_ID" => 7, "SECTION_ID" => $arResult['PROPERTIES']['SPECIAL_SERVICES']['VALUE'], "ACTIVE" => "Y"), false, array("nTopCount" => "4"),
@@ -112,7 +115,7 @@ $arItemIDs = array(
             <a href="<?= $interesting['DETAIL_PAGE_URL']; ?>" class="animation_img">
                 <span class="overlay"></span>
                 <img src="<?= $img["src"] ?>" title="<?= $interesting['NAME']; ?>" alt="<?= $interesting['NAME']; ?>"/>
-                <span class="link"><i class="fa fa-link"></i></span>
+                <span class="link"><i class="fa fa-check"></i></span>
             </a>
             <p><a href="<?= $interesting['DETAIL_PAGE_URL']; ?>"><?= $interesting['NAME']; ?></a></p>
 
@@ -120,12 +123,12 @@ $arItemIDs = array(
     <? } ?>
 </div>
 <div style="clear: both"></div>
-<h3><?= GetMessage("OP"); ?></h3>
+<h2><?= GetMessage("OP"); ?></h2>
 <div class="projects_detail_text">
     <?= $arResult['DETAIL_TEXT']; ?>
 </div>
 
-<h2><?= GetMessage("INTERES"); ?></h2>
+<div class="head-text"><?= GetMessage("ARENDA_CITY"); ?></div>
 <div class="projects_interesting">
     <?
     $projects_interesting = CIBlockElement::GetList(Array("rand" => "DESC"), array("IBLOCK_ID" => 5, "ACTIVE" => "Y"), false, array("nTopCount" => "4"),
@@ -143,7 +146,7 @@ $arItemIDs = array(
             <a href="<?= $interesting['DETAIL_PAGE_URL']; ?>" class="animation_img">
                 <span class="overlay"></span>
                 <img src="<?= $img["src"] ?>" title="<?= $interesting['NAME']; ?>" alt="<?= $interesting['NAME']; ?>"/>
-                <span class="link"><i class="fa fa-link"></i></span>
+                <span class="link"><i class="fa fa-check"></i></span>
             </a>
             <p><a href="<?= $interesting['DETAIL_PAGE_URL']; ?>"><?= $interesting['NAME']; ?></a></p>
         </div>

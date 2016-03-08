@@ -51,8 +51,8 @@ CModule::IncludeModule("iblock");
 	<p class="exit_form"></p>
 	<p class="big_text_form"><?=GetMessage("ADD_APL");?></p>
 	<?$APPLICATION->IncludeComponent(
-		"bitrix:main.feedback", 
-		"leave_application", 
+		"bitrix:main.feedback",
+		"leave_application",
 		array(
 			"COMPONENT_TEMPLATE" => "leave_application",
 			"USE_CAPTCHA" => "N",
@@ -71,8 +71,8 @@ CModule::IncludeModule("iblock");
 	<p class="exit_form"></p>
 	<p class="big_text_form"><?=GetMessage("ADD_PHONE");?></p>
 	<?$APPLICATION->IncludeComponent(
-		"bitrix:main.feedback", 
-		"request_call", 
+		"bitrix:main.feedback",
+		"request_call",
 		array(
 			"COMPONENT_TEMPLATE" => "request_call",
 			"USE_CAPTCHA" => "N",
@@ -111,7 +111,7 @@ CModule::IncludeModule("iblock");
 					<?$APPLICATION->IncludeFile(SITE_DIR."include/header/phone.php", Array(), Array("MODE" => "html","NAME" => "ваш номер телефона"));?>
 					</div>
 					<div class="header_email">
-						<p><a href="#"><?=GetMessage("ADD_PHONE");?></a></p> | 
+						<p><a href="#"><?=GetMessage("ADD_PHONE");?></a></p> |
 						<div>
 						<?$APPLICATION->IncludeFile(SITE_DIR."include/header/email.php", Array(), Array("MODE" => "html","NAME" => "ваш email"));?>
 						</div>
@@ -153,8 +153,8 @@ CModule::IncludeModule("iblock");
 <?if ($APPLICATION->GetCurPage(false) == SITE_DIR){?>
 <div id="slides">
 		<?$APPLICATION->IncludeComponent(
-	"bitrix:news.list", 
-	"slider", 
+	"bitrix:news.list",
+	"slider",
 	array(
 		"COMPONENT_TEMPLATE" => "slider",
 		"IBLOCK_TYPE" => "slider",

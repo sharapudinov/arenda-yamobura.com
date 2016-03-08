@@ -1,6 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Новый раздел");
+$APPLICATION->SetTitle("Услуги в городах");
 ?>
     <div class="projects">
 
@@ -39,7 +39,7 @@ $APPLICATION->SetTitle("Новый раздел");
 		"SET_LAST_MODIFIED" => "N",
 		"SET_TITLE" => "Y",
 		"ADD_SECTIONS_CHAIN" => "Y",
-		"ADD_ELEMENT_CHAIN" => "N",
+		"ADD_ELEMENT_CHAIN" => "Y",
 		"USE_FILTER" => "N",
 		"FILTER_VIEW_MODE" => "VERTICAL",
 		"ACTION_VARIABLE" => "action",
@@ -91,8 +91,13 @@ $APPLICATION->SetTitle("Новый раздел");
 		"LIST_BROWSER_TITLE" => "-",
 		"SECTION_BACKGROUND_IMAGE" => "-",
 		"DETAIL_PROPERTY_CODE" => array(
-			0 => "",
-			1 => "",
+			0 => "MAXIMUM_DRILLING_DEPTH",
+			1 => "MAXIMUM_DIAMETER",
+			2 => "MINIMUM_DIAMETER",
+			3 => "SPECIAL_SERVICES",
+			4 => "PRICE_CHANGE",
+			5 => "PRICE_HOUR",
+			6 => "",
 		),
 		"DETAIL_META_KEYWORDS" => "-",
 		"DETAIL_META_DESCRIPTION" => "-",
