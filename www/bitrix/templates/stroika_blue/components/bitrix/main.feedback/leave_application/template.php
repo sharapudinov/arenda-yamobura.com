@@ -24,7 +24,7 @@ $frame = $this->createFrame("leave_application_form", false)->begin();
 		<input placeholder="info-remont@gmail.com" type="email" name="email" required="required" class="form-input" />
 	</label>
 	<input type="hidden" name="PARAMS_HASH" value="<?=$arResult["PARAMS_HASH"]?>">
-	<input type="submit" value="<?=GetMessage("SEND");?>" />
+	<input type="submit" value="<?=GetMessage("SEND");?>" onclick="yaCounter35589190.reachGoal('zayavka_header');"/>
 	<?$frame->end();?>
 </form>
 <script>
@@ -32,8 +32,8 @@ $("#leave_application_form input[type='submit']").click(function(e){
 		var name = $.trim($("#leave_application_form input[name='name']").val());
 		var phone = $.trim($("#leave_application_form input[name='phone']").val());
 		var email = $.trim($("#leave_application_form input[name='email']").val());
-		var dopusk = false;//если false, то разрешаем отправку данных
-		var mailTo = false;//если false, то phone корректный
+		var dopusk = false;//пїЅпїЅпїЅпїЅ false, пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+		var mailTo = false;//пїЅпїЅпїЅпїЅ false, пїЅпїЅ phone пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		
 		if(name == ''){ $("#leave_application_form input[name='name']").css({'border': '1px solid #ff0000'}); dopusk = true;} else{ $("#leave_application_form input[name='name']").css({'border': '1px solid #cccccc'});} 
 		if(phone == ''){ $("#leave_application_form input[name='phone']").css({'border': '1px solid #ff0000'}); dopusk = true;} else{ $("#leave_application_form input[name='phone']").css({'border': '1px solid #cccccc'});} 

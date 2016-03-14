@@ -6,7 +6,7 @@ AddMessage2Log($APPLICATION->GetCurDir());
 <!DOCTYPE HTML>
 <html lang="<?=LANGUAGE_ID?>">
 <head>
-	<title><?$APPLICATION->ShowTitle()?></title>
+	<title><?$APPLICATION->ShowTitle()?> - компания «МСТ»</title>
 	<meta property="og:site_name" content="Ваш сайт" />
 	<meta property="og:locale" content="ru_RU" />
 	<meta property="og:title" content="<?$APPLICATION->ShowTitle()?>" />
@@ -122,7 +122,7 @@ CModule::IncludeModule("iblock");
 							</div>
 						</div>
 					</noindex>
-					<button><?=GetMessage("ADD_APL");?></button>
+					<button onclick="yaCounter35589190.reachGoal('forma_header');"><?=GetMessage("ADD_APL");?></button>
 				</div>
 			</div>
 			<div class="mobile_header_search">
