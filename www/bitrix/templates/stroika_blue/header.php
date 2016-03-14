@@ -51,8 +51,8 @@ CModule::IncludeModule("iblock");
 	<p class="exit_form"></p>
 	<p class="big_text_form"><?=GetMessage("ADD_APL");?></p>
 	<?$APPLICATION->IncludeComponent(
-	"bitrix:main.feedback", 
-	"leave_application", 
+	"bitrix:main.feedback",
+	"leave_application",
 	array(
 		"COMPONENT_TEMPLATE" => "leave_application",
 		"USE_CAPTCHA" => "N",
@@ -229,8 +229,8 @@ CModule::IncludeModule("iblock");
 <?if ($APPLICATION->GetCurPage(false)!=SITE_DIR){
 
 $APPLICATION->IncludeComponent(
-	"bitrix:breadcrumb", 
-	"breadcrumb", 
+	"bitrix:breadcrumb",
+	"breadcrumb",
 	array(
 		"COMPONENT_TEMPLATE" => "breadcrumb",
 		"START_FROM" => "0",
