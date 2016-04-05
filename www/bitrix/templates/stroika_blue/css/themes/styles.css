@@ -337,7 +337,7 @@ div.load_bg{background:url("images/bg_loading.png"), #fff; width:100%; height:10
 			.projects .projects_top p:nth-child(even){background:#e5e5e5;}
 			.projects .projects_top p:first-child{border-top-left-radius:5px; border-top-right-radius:5px;}
 			.projects .projects_top p:last-child{border-bottom-left-radius:5px; border-bottom-right-radius:5px;}
-				.projects .projects_top p span{font-family: PTSansRegular;}
+				.projects .projects_top p span{font-family: PTSansRegular; float: right;}
 			.projects .projects_top .projects_info_title{font-size:25px; font-family:PTSansBold;}
 			.projects .projects_top .apartment_project_text{font-family:PTSansItalic;}
 	.projects_photo{overflow:hidden; border-bottom:1px dotted #ccc; margin:0 0 10px 0;}
