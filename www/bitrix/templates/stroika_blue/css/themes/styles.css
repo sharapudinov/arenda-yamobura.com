@@ -662,3 +662,12 @@ a.return_back{color: #008fd2;font-size: 16px;}
 		font-size: 18px;
 		margin-bottom: 20px;
 	}
+
+.block-heading{
+	text-align: center;
+	text-transform: inherit;
+	color: #010101;
+	font-size: 30px;
+	margin: 0 0 15px 0;
+	font-family: PTSansBold;
+}

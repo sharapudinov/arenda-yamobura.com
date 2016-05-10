@@ -11,7 +11,7 @@ AddMessage2Log($APPLICATION->GetCurDir());
 	<meta property="og:locale" content="ru_RU" />
 	<meta property="og:title" content="<?$APPLICATION->ShowTitle()?>" />
 	<meta property="og:image" content="<?=SITE_TEMPLATE_PATH;?>/images/logo.png" />
-	<link rel="index" title="Ваш сайт" href="/" />
+	<link rel="index" title="Arenda-Yamobure.com" href="/" />
 	<meta name="application-name" content="Arenda-Yamobure.com" />
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -144,7 +144,7 @@ CModule::IncludeModule("iblock");
 							</div>
 						</div>
 					</noindex>
-					<button onclick="yaCounter35589190.reachGoal('forma_header');"><?=GetMessage("ADD_APL");?></button>
+					<button id="header-button" onclick="yaCounter35589190.reachGoal('forma_header');"><?=GetMessage("ADD_APL");?></button>
 				</div>
 			</div>
 			<div class="mobile_header_search">

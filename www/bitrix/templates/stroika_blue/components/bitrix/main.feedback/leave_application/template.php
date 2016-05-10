@@ -24,7 +24,7 @@ $frame = $this->createFrame("leave_application_form", false)->begin();
 		<input placeholder="info-remont@gmail.com" type="email" name="email" required="required" class="form-input" />
 	</label>
 	<input type="hidden" name="PARAMS_HASH" value="<?=$arResult["PARAMS_HASH"]?>">
-	<input type="submit" value="<?=GetMessage("SEND");?>" onclick="yaCounter35589190.reachGoal('zayavka_header');"/>
+	<input id="click-zakaz" type="submit" value="<?=GetMessage("SEND");?>" onclick="yaCounter35589190.reachGoal('zayavka_header');"/>
 	<?$frame->end();?>
 </form>
 <script>
