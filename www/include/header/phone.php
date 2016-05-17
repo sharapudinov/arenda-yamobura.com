@@ -1,1 +1,2 @@
-7(495) 111-33-99
+<a href="tel:79037970708" title="Номер телефона - аренда ямобура" rel="nofollow" itemprop="telephone">+7 (903) 797-07-08</a></br>
+<a href="tel:74957970708" title="Номер телефона - аренда спецтехники" rel="nofollow" itemprop="faxNumber">+7 (495) 797-07-08</a>

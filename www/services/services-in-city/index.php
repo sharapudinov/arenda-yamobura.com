@@ -6,9 +6,9 @@ $APPLICATION->SetTitle("Услуги в городах");
 
 <?$APPLICATION->IncludeComponent(
 	"bitrix:catalog", 
-	"services-in-city", 
+	"portfolio", 
 	array(
-		"COMPONENT_TEMPLATE" => "services-in-city",
+		"COMPONENT_TEMPLATE" => "portfolio",
 		"IBLOCK_TYPE" => "services",
 		"IBLOCK_ID" => "5",
 		"TEMPLATE_THEME" => "blue",
@@ -67,8 +67,13 @@ $APPLICATION->SetTitle("Услуги в городах");
 		"TOP_ELEMENT_SORT_FIELD2" => "id",
 		"TOP_ELEMENT_SORT_ORDER2" => "desc",
 		"TOP_PROPERTY_CODE" => array(
-			0 => "",
-			1 => "",
+			0 => "VIDEO",
+			1 => "MAXIMUM_DRILLING_DEPTH",
+			2 => "MAXIMUM_DIAMETER",
+			3 => "MINIMUM_DIAMETER",
+			4 => "PRICE_CHANGE",
+			5 => "PRICE_HOUR",
+			6 => "",
 		),
 		"TOP_VIEW_MODE" => "SECTION",
 		"SECTION_COUNT_ELEMENTS" => "Y",

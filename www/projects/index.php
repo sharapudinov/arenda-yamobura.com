@@ -1,10 +1,11 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("title", "Проекты нашей компании");
 
-$APPLICATION->SetTitle("Проекты");
+$APPLICATION->SetTitle("Проекты нашей компании");
 $APPLICATION->SetPageProperty("tags", "Проекты");
-$APPLICATION->SetPageProperty("keywords", "Ключевые, слова, вашего, сайта");
-$APPLICATION->SetPageProperty("description", "Описание вашего сайта");
+$APPLICATION->SetPageProperty("keywords", "аренда колесного экскаватора в москве, забор на винтовых сваях цена с монтажом, портал аренды спецтехники, аренда спецтехники в подмосковье, установка винтовых свай цена, бурение свай тисэ, бурение под столбы забора цена, услуги ямобура в москве, аренда спецтехники в москве и области, аренда спецтехники цены");
+$APPLICATION->SetPageProperty("description", "Ознакомьтесь с намими проектами и примерами по выполенению работ.");
 ?>
 <img class="loadImg" src="<?=SITE_TEMPLATE_PATH?>/css/themes/images/loading.gif" alt="loading" />
 <div class="projects">
@@ -93,8 +94,11 @@ $APPLICATION->SetPageProperty("description", "Описание вашего са
 		"LIST_META_DESCRIPTION" => "-",
 		"LIST_BROWSER_TITLE" => "-",
 		"DETAIL_PROPERTY_CODE" => array(
-			0 => "",
-			1 => "",
+			0 => "CLIENT",
+			1 => "REPAIR",
+			2 => "TERMS",
+			3 => "AREA",
+			4 => "",
 		),
 		"DETAIL_META_KEYWORDS" => "-",
 		"DETAIL_META_DESCRIPTION" => "-",
@@ -121,8 +125,8 @@ $APPLICATION->SetPageProperty("description", "Описание вашего са
 		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
 		"PAGER_SHOW_ALL" => "N",
 		"PAGER_BASE_LINK_ENABLE" => "N",
-		"SET_STATUS_404" => "N",
-		"SHOW_404" => "N",
+		"SET_STATUS_404" => "Y",
+		"SHOW_404" => "Y",
 		"MESSAGE_404" => "",
 		"ADD_PICT_PROP" => "-",
 		"LABEL_PROP" => "-",
@@ -131,6 +135,7 @@ $APPLICATION->SetPageProperty("description", "Описание вашего са
 		"SECTION_BACKGROUND_IMAGE" => "-",
 		"DETAIL_BACKGROUND_IMAGE" => "-",
 		"DISABLE_INIT_JS_IN_COMPONENT" => "N",
+		"FILE_404" => "",
 		"SEF_URL_TEMPLATES" => array(
 			"sections" => "",
 			"section" => "/#SECTION_CODE#/",

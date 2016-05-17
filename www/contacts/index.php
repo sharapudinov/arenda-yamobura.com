@@ -1,14 +1,14 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
-$APPLICATION->SetPageProperty("title", "Контакты компании ");
-$APPLICATION->SetTitle("Контакты компании ");
+$APPLICATION->SetPageProperty("title", "Контакты");
+$APPLICATION->SetTitle("Контакты компании «МСТ»");
 $APPLICATION->SetPageProperty("tags", "Контакты");
 $APPLICATION->SetPageProperty("keywords", "аренда спецтехники в москве цены, портал аренды спецтехники, аренда спецтехники в подмосковье, аренда спецтехники в москве и области, сайт аренды спецтехники, аренда спецтехники строительной техники, аренда спецтехники экскаватор погрузчик, аренда спецтехники цены, аренда карьерной спецтехники, аренда спецтехники на день в москве");
 $APPLICATION->SetPageProperty("description", "Контактные данные компании МСТ. Здесь вы можете узнать всю основную информацию по аренде строительной техники.");
 ?>
     <div class="wrapper_center">
     <div class="contact">
-        <div class="contact_info">
+        <div class="contact_info" itemscope itemtype="http://schema.org/Organization">
             <div class="contact_address contact_info_float">
                 <span class="fa icon_map_marker"></span>
                 <p class="txt-bold">Адрес:</p>

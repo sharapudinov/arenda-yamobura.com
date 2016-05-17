@@ -1,1 +1,1 @@
-remont@bk.ru
+<a href="mailto:info@arenda-yamobura.com" title="Электронная почта - аренда ямобура" rel="nofollow">info@arenda-yamobura.com</a>
