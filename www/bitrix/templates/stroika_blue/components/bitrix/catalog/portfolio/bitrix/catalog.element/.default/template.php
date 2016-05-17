@@ -56,7 +56,7 @@ $arItemIDs = array(
 
 <div class="projects_top">
     <?
-    $img = $arResult["PREVIEW_PICTURE"];
+    $img = $arResult["DETAIL_PICTURE"];
     $img = CFile::ResizeImageGet(
         $img,
         array("width" => "600", "height" => "400"),
@@ -71,6 +71,7 @@ $arItemIDs = array(
         <? if (is_set($property["VALUE"])): ?><p><?=$property["NAME"]; ?>
             <span><?= $property["VALUE"] ?></span></p><? endif; ?>
         <? endforeach; ?>
+        <span><input type="button" value="Оформить заказ"/></span>
     </div>
 </div>
 
@@ -91,7 +92,41 @@ $arItemIDs = array(
     </div>
 <? endif; ?>
 
-<h3><?= GetMessage("OP"); ?></h3>
+<noindex>
+    <h2><?= GetMessage("ARENDA_DETAIL"); ?></h2>
+    <div class="projects_detail_text">
+        <?= $arResult['PREVIEW_TEXT']; ?>
+    </div>
+</noindex>
+
+<h2><?= GetMessage("TEHNIKA_DETAIL"); ?></h2>
+<div class="projects_interesting">
+    <?
+    $projects_interesting = CIBlockElement::GetList(Array("rand" => "DESC"), array("IBLOCK_ID" => 7, "SECTION_ID" => $arResult['PROPERTIES']['SPECIAL_SERVICES']['VALUE'], "ACTIVE" => "Y"), false, array("nTopCount" => "4"),
+        array("PREVIEW_PICTURE", "NAME", "DETAIL_PAGE_URL"));
+    while ($interesting = $projects_interesting->GetNext(false, false)) {
+        $img = CFile::GetFileArray($interesting["PREVIEW_PICTURE"]);
+        $img = CFile::ResizeImageGet(
+            $img,
+            array("width" => "400", "height" => "150"),
+            BX_RESIZE_IMAGE_PROPORTIONAL,
+            false, $arFilters = Array()
+        );
+        ?>
+        <div class="projects_interesting_element">
+            <a href="<?= $interesting['DETAIL_PAGE_URL']; ?>" class="animation_img">
+                <span class="overlay"></span>
+                <img src="<?= $img["src"] ?>" title="<?= $interesting['NAME']; ?>" alt="<?= $interesting['NAME']; ?>"/>
+                <span class="link"><i class="fa fa-check"></i></span>
+            </a>
+            <p><a href="<?= $interesting['DETAIL_PAGE_URL']; ?>"><?= $interesting['NAME']; ?></a></p>
+
+        </div>
+    <? } ?>
+</div>
+<div style="clear: both"></div>
+
+<h2><?= GetMessage("OP"); ?></h2>
 <div class="projects_detail_text">
     <?= $arResult['DETAIL_TEXT']; ?>
 </div>

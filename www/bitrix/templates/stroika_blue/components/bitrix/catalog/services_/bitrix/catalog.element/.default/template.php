@@ -71,7 +71,7 @@ $arItemIDs = array(
             <? if (is_set($property["VALUE"])): ?><p><?= $property["NAME"]; ?>
                 <span><?= $property["VALUE"] ?></span></p><? endif; ?>
         <? endforeach; ?>
-        <span><input type="button" value="Оформить заказ"/></span>
+        <span><input type="button" id="services-button" value="Оформить заказ" onclick="yaCounter35589190.reachGoal('forma_services');"/></span>
     </div>
 </div>
 
