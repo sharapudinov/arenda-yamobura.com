@@ -47,7 +47,6 @@ foreach($arResult["SECTIONS"] as $key => $arSection)
 			<span class="link"><i class="fa fa-check"></i></span>
 		</a>
 		<p><a href="<?=$arElement["DETAIL_PAGE_URL"];?>"><?=$arElement["NAME"];?></a></p>
-		<span><?=$arElement["PREVIEW_TEXT"];?></span>
 	</div>
 	<?	
 	}
