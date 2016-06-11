@@ -17,11 +17,11 @@ $frame = $this->createFrame("leave_application_form", false)->begin();
 	</label>
 	<label>
 		<span><?=GetMessage("MFT_PHONE");?></span>
-		<input placeholder="+7(945) 849-01-76" type="tel" name="phone" required="required" class="form-input" />
+		<input placeholder="+7(495)797-07-08" type="tel" name="phone" required="required" class="form-input" />
 	</label>	
 	<label>	
 		<span><?=GetMessage("MFT_EMAIL");?></span>
-		<input placeholder="info-remont@gmail.com" type="email" name="email" required="required" class="form-input" />
+		<input placeholder="info@arenda-yamobura.com" type="email" name="email" required="required" class="form-input" />
 	</label>
 	<input type="hidden" name="PARAMS_HASH" value="<?=$arResult["PARAMS_HASH"]?>">
 	<input id="click-zakaz" type="submit" value="<?=GetMessage("SEND");?>" onclick="yaCounter35589190.reachGoal('zayavka_header');"/>

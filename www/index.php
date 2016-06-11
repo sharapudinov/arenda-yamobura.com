@@ -47,8 +47,8 @@ $APPLICATION->SetPageProperty("description", "Аренда спецтехник�
 <div class="services">
 	<div class="services_center">
 		<?$APPLICATION->IncludeComponent(
-	"bitrix:catalog",
-	"services",
+	"bitrix:catalog", 
+	"services", 
 	array(
 		"ACTION_VARIABLE" => "action",
 		"ADD_ELEMENT_CHAIN" => "N",

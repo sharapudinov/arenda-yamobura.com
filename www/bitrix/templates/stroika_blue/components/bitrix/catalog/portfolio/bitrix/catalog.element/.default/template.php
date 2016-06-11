@@ -67,11 +67,29 @@ $arItemIDs = array(
     <div class="projects_info">
         <p class="projects_info_title"><?= GetMessage("KR_OP"); ?></p>
 
-        <? foreach ($arResult['DISPLAY_PROPERTIES'] as $property): ?>
-        <? if (is_set($property["VALUE"])): ?><p><?=$property["NAME"]; ?>
-            <span><?= $property["VALUE"] ?></span></p><? endif; ?>
-        <? endforeach; ?>
-        <span><input type="button" value="Оформить заказ"/></span>
+        <? if ($arResult['PROPERTIES']['MAXIMUM_DRILLING_DEPTH']['VALUE']): ?>
+            <p><?=$arResult['PROPERTIES']['MAXIMUM_DRILLING_DEPTH']['NAME']; ?> <span><?=$arResult['PROPERTIES']['MAXIMUM_DRILLING_DEPTH']['VALUE'] ?></span></p>
+        <? endif; ?>
+        <? if ($arResult['PROPERTIES']['BUCKET_CAPACITY']['VALUE']): ?>
+            <p><?=$arResult['PROPERTIES']['BUCKET_CAPACITY']['NAME']; ?> <span><?=$arResult['PROPERTIES']['BUCKET_CAPACITY']['VALUE'] ?></span></p>
+        <? endif; ?>
+        <? if ($arResult['PROPERTIES']['MAXIMUM_DIGGING_DEPTH']['VALUE']): ?>
+            <p><?=$arResult['PROPERTIES']['MAXIMUM_DIGGING_DEPTH']['NAME']; ?> <span><?=$arResult['PROPERTIES']['MAXIMUM_DIGGING_DEPTH']['VALUE'] ?></span></p>
+        <? endif; ?>
+        <? if ($arResult['PROPERTIES']['MINIMUM_DIAMETER']['VALUE']): ?>
+            <p><?=$arResult['PROPERTIES']['MINIMUM_DIAMETER']['NAME']; ?> <span><?=$arResult['PROPERTIES']['MINIMUM_DIAMETER']['VALUE'] ?></span></p>
+        <? endif; ?>
+        <? if ($arResult['PROPERTIES']['MAXIMUM_DIAMETER']['VALUE']): ?>
+            <p><?=$arResult['PROPERTIES']['MAXIMUM_DIAMETER']['NAME']; ?> <span><?=$arResult['PROPERTIES']['MAXIMUM_DIAMETER']['VALUE'] ?></span></p>
+        <? endif; ?>
+        <? if ($arResult['PROPERTIES']['PRICE_HOUR']['VALUE']): ?>
+            <p><?=$arResult['PROPERTIES']['PRICE_HOUR']['NAME']; ?> <span><?=$arResult['PROPERTIES']['PRICE_HOUR']['VALUE'] ?></span></p>
+        <? endif; ?>
+        <? if ($arResult['PROPERTIES']['PRICE_CHANGE']['VALUE']): ?>
+            <p><?=$arResult['PROPERTIES']['PRICE_CHANGE']['NAME']; ?> <span><?=$arResult['PROPERTIES']['PRICE_CHANGE']['VALUE'] ?></span></p>
+        <? endif; ?>
+
+        <span><input type="button" id="services-button" value="Оформить заказ" onclick="yaCounter35589190.reachGoal('forma_services');"/></span>
     </div>
 </div>
 
@@ -86,7 +104,7 @@ $arItemIDs = array(
             <a href="<?= $img["SRC"] ?>" rel="catalog_img" class="animation_img">
                 <span class="overlay"></span>
                 <img src="<?= $img["SRC"] ?>" title="<?= $arResult['NAME']; ?>" alt="<?= $arResult['NAME']; ?>"/>
-                <span class="link"><i class="fa fa-link"></i></span>
+                <span class="link"><i class="fa fa-check"></i></span>
             </a>
         <? } ?>
     </div>

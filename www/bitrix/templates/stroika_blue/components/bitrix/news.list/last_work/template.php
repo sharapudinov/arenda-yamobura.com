@@ -18,6 +18,5 @@
 			<span class="link"><i class="fa fa-check"></i></span>
 		</a>
 		<p><a href="<?=$arItem["DETAIL_PAGE_URL"];?>"><?=$arItem["NAME"];?></a></p>
-		<span><?=$arItem["PREVIEW_TEXT"];?></span>
 	</div>
 <?endforeach;?>
